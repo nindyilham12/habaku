@@ -3,8 +3,37 @@ module.exports = {
     theme: {
       extend: {
         backgroundImage: {
-          'bgBanner': "linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 52.03%), url(images/hero-banner-desktop.png)",
-        
+          'bgApaHabaku': "url('images/bg-about-habaku.png')",  
+          'bgHabakuLogoPromo': "url('images/produk-habaku-logo.png')",        
+          //background color
+          'tk-blue': 'linear-gradient(92.95deg, #9BB0DA -9.11%, #DAE3F4 104.82%)',
+          'tk-green': 'linear-gradient(92.65deg, #C6DDC8 -22.05%, #7FAE83 105.09%)',
+        },
+
+        backgroundSize : {
+          '80%': '80%',
+        },
+
+        borderRadius : {
+          'none': '0px',
+          'sm': '2px',
+          'md': '6px',
+          'lg': '8px',
+          'xl': '12px',
+          '2xl': '16px',
+          '3xl': '24px',
+        },
+
+        borderWidth : {
+          '0': '0px',
+          '2': '2px',
+          '3': '3px',
+          '4':  '4px',
+          '8': '8px',
+        },
+
+        dropShadow: {
+          'dropBlue': '0px 0px 16px #9BB0DA',
         },
 
         colors: {
@@ -53,23 +82,26 @@ module.exports = {
           'greyscale-80': '#666666',
           'greyscale-100': '#222222',
           
+          'nav-overlay': 'rgba(0, 0, 0, 0.35)',
         },
 
         fontFamily: {
-            'nunito': ['Nunito'],
+            'lato': ['Lato'],
+            'montserrat' : ['Montserrat']
         },
         
         fontSize: {
           sm: ['14px', '20px'],
-          // base: ['16px', '24px'],
-          // lg: ['20px', '28px'],
           xl: ['24px', '32px'],
           'dh-head4': ['30px', '40px'], 
+          'dh-head5': ['24px','36px'],
           'dh-head6': ['20px', '28px'],  
-          'db-small': ['16px', '24px'],   
+          'db-small': ['16px', '24px'],  
+          'db-large': ['18px', '28px'],
           'dc-large': ['14px','21px'],    
           'mh-head3': ['24px', '30px'],
           'mh-head6': ['18px', '24px'],
+          'mh-head7': ['16px', '24px'],
           'mb-small': ['14px', '21px'],
           'mc-large': ['12px', '18px'],
         },
@@ -101,9 +133,18 @@ module.exports = {
         //padding, margin, width, height, maxHeight, flex-basis, 
         //gap, inset, space, translate, scrollMargin, scrollPadding, and textIndent.
         spacing: {
+          '10': '10px',
           '40': '40px',
+          '48': '48px',
+          '70': '70px',
           '72': '72px',
           '74': '74px',
+          '80': '80px',
+          '85': '85px',
+          '95': '95px',
+          '120': '120px',
+          '200': '200px',
+          '262': '262px'
         },
       }
       

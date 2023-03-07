@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <title>Habaku || Artikel</title>
+</head>
+
+<body class="font-lato">
+    <!--Navbar-->
+    <div class="fixed w-full z-50">
+        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5">
+            <nav class="nav-desk flex justify-between items-center">
+                <a class="block overflow-hidden" href="index.html">
+                    <img class="h-8 lg:h-full w-16 lg:w-full object-cover" src="images/habaku-logo.png" />
+                </a>
+                <div>
+                    <button id="toggle-menu-button" class="z-50 lg:hidden relative">
+                        <!--Toggle Menu-->
+                        <div id="open" class="flex flex-col items-end justify-between">
+                            <span class="block text-blue-400 text-mh-head3">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </div>
+                        <div id="close" class="hidden fixed top-6 right-8 flex flex-col items-end justify-between">
+                            <span class="block text-greyscale-80 text-mh-head3">
+                                <i class="bi bi-x"></i>
+                            </span>
+                        </div>
+                    </button>
+                    <div id="toggle-menu"
+                        class="container hidden bg-green-100 lg:bg-transparent lg:block pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
+                        <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
+                            <li class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                <a href="index.html">Beranda</a>
+                            </li>
+                            <li class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                <a href="produk.html">Produk</a>
+                            </li>
+                            <li class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
+                                <a href="artikel.html">Artikel</a>
+                            </li>
+                            <li class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                <a href="tentang-kami.html">Tentang Kami</a>
+                            </li>
+                            <li class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                <a href="hubungi-kami.html">Hubungi Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!--Header Banner-->
+    <main>
+        <div class="relative h-full">
+            <div class="bg-green-200 absolute top-0 w-full h-full"></div>
+            <div class="2xl:container mx-auto">
+                <div class="relative grid grid-cols-1 lg:grid-cols-2 pl-4 pr-4 md:pl-72 md:pr-0 pt-72">
+                    <img src="images/hero-artikel-mob-illustration.png" class="w-full h-full block lg:hidden" />
+                    <div class="text-left grid gap-4 my-auto">
+                        <h1 class="font-montserrat text-dh-head4 text-greyscale-100">Cerita Teman Habaku</h1>
+                        <p class="text-db-small font-medium">
+                            Kumpulan cerita serta tips terkait bisnis kecantikan dan kesehatan.
+                        </p>
+                    </div>
+                    <img src="images/hero-artikel-desk-illustration.png" class="w-full hidden lg:block" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Section Kenapa Harus Belanja Di Habaku-->
+    <section class="bg-greyscale-0">
+        <div class="container mx-auto px-4 py-4 md:px-200 lg:py-40 grid gap-6">
+            <h1 class="text-dh-head4 text-left">
+                Artikel Terbaru
+            </h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <a href="detail-artikel.html">
+                    <div class="grid">
+                        <img src="images/img-artikel-1.png" class="mx-auto w-fill h-fill" />
+                        <div class="pt-4 pb-1 text-left">
+                            <h1 class="text-dh-head5">Judul Artikel</h1>
+                            <p class="text-dc-large text-greyscale-80">Kategori/Label Artikel · 12 Feb 2023</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="detail-artikel.html">
+                    <div class="grid">
+                        <img src="images/img-artikel-2.png" class="mx-auto w-fill h-fill" />
+                        <div class="pt-4 pb-1 text-left">
+                            <h1 class="text-dh-head5">Judul Artikel</h1>
+                            <p class="text-dc-large text-greyscale-80">Kategori/Label Artikel · 12 Feb 2023</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="detail-artikel.html">
+                    <div class="grid">
+                        <img src="images/img-artikel-3.png" class="mx-auto w-fill h-fill" />
+                        <div class="pt-4 pb-1 text-left">
+                            <h1 class="text-dh-head5">Judul Artikel</h1>
+                            <p class="text-dc-large text-greyscale-80">Kategori/Label Artikel · 12 Feb 2023</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="detail-artikel.html">
+                    <div class="grid">
+                        <img src="images/img-artikel-4.png" class="mx-auto w-fill h-fill" />
+                        <div class="pt-4 pb-1 text-left">
+                            <h1 class="text-dh-head5">Judul Artikel</h1>
+                            <p class="text-dc-large text-greyscale-80">Kategori/Label Artikel · 12 Feb 2023</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="detail-artikel.html">
+                    <div class="grid">
+                        <img src="images/img-artikel-5.png" class="mx-auto w-fill h-fill" />
+                        <div class="pt-4 pb-1 text-left">
+                            <h1 class="text-dh-head5">Judul Artikel</h1>
+                            <p class="text-dc-large text-greyscale-80">Kategori/Label Artikel · 12 Feb 2023</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="detail-artikel.html">
+                    <div class="grid">
+                        <img src="images/img-artikel-6.png" class="mx-auto w-fill h-fill" />
+                        <div class="pt-4 pb-1 text-left">
+                            <h1 class="text-dh-head5">Judul Artikel</h1>
+                            <p class="text-dc-large text-greyscale-80">Kategori/Label Artikel · 12 Feb 2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-green-100">
+        <div class="container mx-auto px-4 py-4">
+            <div class="md:px-72 lg:py-40">
+                <img src="images/habaku-logo.png" class="w-80 lg:w-fit h-21 lg:h-fit" />
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-20 pt-6 text-greyscale-100">
+                    <div class="pb-2">
+                        <h1 class="font-bold pb-2 text-20 lg:text-dh-head6">
+                            Perusahaan
+                        </h1>
+                        <div class="text-14 grid gap-2 lg:text-db-small text-green-400 font-semibold">
+                            <a href="#">Tentang</a>
+                            <a href="#">Produk</a>
+                            <a href="#">Artikel</a>
+                        </div>
+                    </div>
+
+                    <div class="pb-2">
+                        <h1 class="font-bold pb-2 text-20 lg:text-dh-head6">
+                            Hubungi Kami
+                        </h1>
+                        <div class="text-14 grid gap-2 lg:text-db-small text-green-400 font-semibold">
+                            <a href="#">Kontak</a>
+                            <a href="#">Lokasi</a>
+                        </div>
+                    </div>
+
+                    <div class="text-left">
+                        <h1 class="font-bold pb-2 text-20 lg:text-dh-head6">
+                            Temukan Habaku di:
+                        </h1>
+                        <div class="rounded-full w-fit py-1 px-2 bg-green-400 text-green-100">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="text-left">
+                        <h1 class="font-bold pb-2 text-20 lg:text-dh-head6">
+                            Unduh Aplikasi
+                        </h1>
+                        <div
+                            class="border border-green-400 flex space-x-1 py-2 pl-2 pr-3 rounded text-green-400 items-center w-fit">
+                            <i class="fab fa-google-play"></i>
+                            <p class="text-db-small font-semibold">Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-left lg:text-center text-greyscale-80">
+                © 2023 Habaku | Marketplace for Health & Beauty Products
+            </p>
+        </div>
+    </footer>
+</body>
+
+<!--Script for Responsive Navbar-->
+<script>
+    var button = document.querySelector('#toggle-menu-button');
+    var menu = document.querySelector('#toggle-menu');
+    var open = document.querySelector('#open');
+    var close = document.querySelector('#close');
+
+    button.addEventListener('click', (e) => {
+        menu.classList.toggle('hidden');
+        open.classList.toggle('hidden');
+        close.classList.toggle('hidden');
+    });
+</script>
+</html>

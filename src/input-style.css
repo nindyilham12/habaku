@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 
 @tailwind base;
@@ -6,4 +7,53 @@
 @tailwind utilities;
 
 @layer utilities {
+    .nav-desk {
+        background: transparent;
+    }
+
+    .nav-white {
+        background: #fff;
+    }
+
+    .wrapper-rev {
+        width: 100%;
+        position: relative;
+    }
+
+    .carousel-rev {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .carousel-rev .slick-list {
+        padding: 0 !important;
+    }
+
+    .carousel-rev .slick-slide {
+        margin: 20px;
+    }
+
+    .carousel-rev .slick-dots li button:before {
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .carousel-rev .slick-dots li.slick-active button:before {
+        color: #1D4AA7;
+        opacity: 1;
+        background: #1D4AA7;
+    }
+
+    .carousel-rev .slick-dots {
+        text-align: center;
+    }
+
+    @media (min-width: 1536px) {
+        .carousel-rev {
+            width: 1118px;
+            max-width: 1536px;
+        }
+    }
+
 }
