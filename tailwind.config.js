@@ -3,7 +3,8 @@ module.exports = {
     theme: {
       extend: {
         backgroundImage: {
-          'bgApaHabaku': "url('images/bg-about-habaku.png')",  
+          'bgApaHabakuDesk': "url('images/bg-desk-about-habaku.png')",  
+          'bgApaHabakuMob': "url('images/bg-mob-about-habaku.png')",  
           'bgHabakuLogoPromo': "url('images/produk-habaku-logo.png')",        
           //background color
           'tk-blue': 'linear-gradient(92.95deg, #9BB0DA -9.11%, #DAE3F4 104.82%)',
@@ -100,6 +101,7 @@ module.exports = {
           'db-large': ['18px', '28px'],
           'dc-large': ['14px','21px'],    
           'mh-head3': ['24px', '30px'],
+          'mh-head4': ['22px', '30px'],
           'mh-head6': ['18px', '24px'],
           'mh-head7': ['16px', '24px'],
           'mb-small': ['14px', '21px'],
@@ -134,16 +136,24 @@ module.exports = {
         //gap, inset, space, translate, scrollMargin, scrollPadding, and textIndent.
         spacing: {
           '10': '10px',
+          '38': '38px',
           '40': '40px',
           '48': '48px',
+          '52': '52px',
+          '56': '56px',
           '70': '70px',
           '72': '72px',
           '74': '74px',
           '80': '80px',
           '85': '85px',
           '95': '95px',
+          '100': '100px',
           '120': '120px',
+          '140': '140px',
           '200': '200px',
+          '215': '215px',
+          '220': '220px',
+          '250': '250px',
           '262': '262px'
         },
       }

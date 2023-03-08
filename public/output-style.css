@@ -587,6 +587,10 @@ video {
   z-index: 50;
 }
 
+.order-first{
+  order: -9999;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -629,8 +633,33 @@ video {
   height: 120px;
 }
 
+.h-220{
+  height: 220px;
+}
+
+.h-38{
+  height: 38px;
+}
+
+.h-40{
+  height: 40px;
+}
+
+.h-52{
+  height: 52px;
+}
+
+.h-72{
+  height: 72px;
+}
+
 .h-8{
   height: 2rem;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-full{
@@ -642,8 +671,12 @@ video {
   height: max-content;
 }
 
-.h-72{
-  height: 72px;
+.h-95{
+  height: 95px;
+}
+
+.w-100{
+  width: 100px;
 }
 
 .w-16{
@@ -654,8 +687,12 @@ video {
   width: 200px;
 }
 
-.w-262{
-  width: 262px;
+.w-215{
+  width: 215px;
+}
+
+.w-250{
+  width: 250px;
 }
 
 .w-3\/4{
@@ -666,8 +703,24 @@ video {
   width: 60%;
 }
 
+.w-72{
+  width: 72px;
+}
+
+.w-74{
+  width: 74px;
+}
+
 .w-80{
   width: 80px;
+}
+
+.w-85{
+  width: 85px;
+}
+
+.w-95{
+  width: 95px;
 }
 
 .w-fit{
@@ -684,30 +737,6 @@ video {
   width: max-content;
 }
 
-.w-40{
-  width: 40px;
-}
-
-.w-70{
-  width: 70px;
-}
-
-.w-85{
-  width: 85px;
-}
-
-.w-120{
-  width: 120px;
-}
-
-.w-95{
-  width: 95px;
-}
-
-.w-72{
-  width: 72px;
-}
-
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -718,10 +747,6 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -748,6 +773,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-0{
+  gap: 0px;
+}
+
 .gap-1{
   gap: 0.25rem;
 }
@@ -760,10 +789,6 @@ video {
   gap: 1rem;
 }
 
-.gap-40{
-  gap: 40px;
-}
-
 .gap-6{
   gap: 1.5rem;
 }
@@ -772,14 +797,13 @@ video {
   gap: 2rem;
 }
 
-.gap-x-48{
-  -moz-column-gap: 48px;
-       column-gap: 48px;
-}
-
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-y-2{
+  row-gap: 0.5rem;
 }
 
 .gap-y-6{
@@ -814,12 +838,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -889,12 +907,16 @@ video {
   background-color: transparent;
 }
 
-.bg-bgApaHabaku{
-  background-image: url('images/bg-about-habaku.png');
+.bg-bgApaHabakuMob{
+  background-image: url('images/bg-mob-about-habaku.png');
 }
 
 .bg-bgHabakuLogoPromo{
   background-image: url('images/produk-habaku-logo.png');
+}
+
+.bg-none{
+  background-image: none;
 }
 
 .bg-tk-blue{
@@ -905,8 +927,8 @@ video {
   background-image: linear-gradient(92.65deg, #C6DDC8 -22.05%, #7FAE83 105.09%);
 }
 
-.bg-80\%{
-  background-size: 80%;
+.bg-contain{
+  background-size: contain;
 }
 
 .bg-cover{
@@ -990,6 +1012,20 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.pb-0{
+  padding-bottom: 0px;
+}
+
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -1014,10 +1050,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pb-70{
-  padding-bottom: 70px;
-}
-
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1038,6 +1070,10 @@ video {
   padding-right: 1rem;
 }
 
+.pt-0{
+  padding-top: 0px;
+}
+
 .pt-1{
   padding-top: 0.25rem;
 }
@@ -1052,6 +1088,10 @@ video {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .pt-6{
@@ -1074,12 +1114,12 @@ video {
   padding-top: 85px;
 }
 
-.pt-0{
-  padding-top: 0px;
+.pt-140{
+  padding-top: 140px;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
+.pt-95{
+  padding-top: 95px;
 }
 
 .text-left{
@@ -1145,6 +1185,16 @@ video {
 .text-mh-head3{
   font-size: 24px;
   line-height: 30px;
+}
+
+.text-mh-head4{
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.text-mh-head6{
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .text-mh-head7{
@@ -1230,8 +1280,11 @@ video {
 }
 
 .carousel-rev .slick-dots li button:before {
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 10px;
+  line-height: 0;
+  width: 0;
+  height: 0;
 }
 
 .carousel-rev .slick-dots li.slick-active button:before {
@@ -1332,6 +1385,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:bg-bgApaHabakuDesk{
+    background-image: url('images/bg-desk-about-habaku.png');
+  }
+
   .md\:px-200{
     padding-left: 200px;
     padding-right: 200px;
@@ -1360,6 +1417,10 @@ video {
     position: relative;
   }
 
+  .lg\:order-last{
+    order: 9999;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1374,6 +1435,10 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:h-56{
+    height: 56px;
   }
 
   .lg\:h-auto{
@@ -1392,6 +1457,14 @@ video {
   .lg\:h-max{
     height: -moz-max-content;
     height: max-content;
+  }
+
+  .lg\:w-100{
+    width: 100px;
+  }
+
+  .lg\:w-262{
+    width: 262px;
   }
 
   .lg\:w-3\/4{
@@ -1415,10 +1488,6 @@ video {
     width: 100%;
   }
 
-  .lg\:w-262{
-    width: 262px;
-  }
-
   .lg\:w-max{
     width: -moz-max-content;
     width: max-content;
@@ -1440,8 +1509,8 @@ video {
     flex-direction: row;
   }
 
-  .lg\:flex-col{
-    flex-direction: column;
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
 
   .lg\:gap-20{
@@ -1452,14 +1521,51 @@ video {
     gap: 1rem;
   }
 
-  .lg\:space-x-40 > :not([hidden]) ~ :not([hidden]){
+  .lg\:gap-40{
+    gap: 40px;
+  }
+
+  .lg\:gap-48{
+    gap: 48px;
+  }
+
+  .lg\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+
+  .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(40px * var(--tw-space-x-reverse));
-    margin-left: calc(40px * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:rounded-2xl{
+    border-radius: 16px;
+  }
+
+  .lg\:rounded-lg{
+    border-radius: 8px;
+  }
+
+  .lg\:bg-green-100{
+    --tw-bg-opacity: 1;
+    background-color: rgb(233 245 234 / var(--tw-bg-opacity));
   }
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:bg-bgHabakuLogoPromo{
+    background-image: url('images/produk-habaku-logo.png');
+  }
+
+  .lg\:bg-none{
+    background-image: none;
   }
 
   .lg\:px-0{
@@ -1472,9 +1578,9 @@ video {
     padding-right: 200px;
   }
 
-  .lg\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .lg\:px-72{
+    padding-left: 72px;
+    padding-right: 72px;
   }
 
   .lg\:py-10{
@@ -1492,20 +1598,79 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .lg\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .lg\:pb-2{
+    padding-bottom: 0.5rem;
+  }
+
+  .lg\:pb-40{
+    padding-bottom: 40px;
+  }
+
+  .lg\:pb-6{
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:pb-70{
+    padding-bottom: 70px;
+  }
+
+  .lg\:pl-200{
+    padding-left: 200px;
+  }
+
+  .lg\:pl-72{
+    padding-left: 72px;
+  }
+
+  .lg\:pr-0{
+    padding-right: 0px;
   }
 
   .lg\:pt-0{
     padding-top: 0px;
   }
 
-  .lg\:pt-6{
-    padding-top: 1.5rem;
+  .lg\:pt-140{
+    padding-top: 140px;
   }
 
   .lg\:pt-4{
     padding-top: 1rem;
+  }
+
+  .lg\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .lg\:pt-8{
+    padding-top: 2rem;
+  }
+
+  .lg\:pt-80{
+    padding-top: 80px;
+  }
+
+  .lg\:pt-72{
+    padding-top: 72px;
   }
 
   .lg\:text-left{
@@ -1531,9 +1696,32 @@ video {
     line-height: 40px;
   }
 
+  .lg\:text-dh-head5{
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   .lg\:text-dh-head6{
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .lg\:text-dc-large{
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .lg\:text-mh-head3{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .lg\:font-normal{
+    font-weight: 400;
+  }
+
+  .lg\:font-semibold{
+    font-weight: 600;
   }
 
   .lg\:text-greyscale-100{
@@ -1543,6 +1731,16 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .xl\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .xl\:max-w-5xl{
     max-width: 64rem;
   }
