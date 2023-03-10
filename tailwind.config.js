@@ -5,7 +5,7 @@ module.exports = {
         backgroundImage: {
           'bgApaHabakuDesk': "url('images/bg-desk-about-habaku.png')",  
           'bgApaHabakuMob': "url('images/bg-mob-about-habaku.png')",  
-          'bgHabakuLogoPromo': "url('images/produk-habaku-logo.png')",        
+          'bgHabakuLogoPromo': "url('images/produk-habaku-logo.png')",
           //background color
           'tk-blue': 'linear-gradient(92.95deg, #9BB0DA -9.11%, #DAE3F4 104.82%)',
           'tk-green': 'linear-gradient(92.65deg, #C6DDC8 -22.05%, #7FAE83 105.09%)',
@@ -35,6 +35,7 @@ module.exports = {
 
         dropShadow: {
           'dropBlue': '0px 0px 16px #9BB0DA',
+          'dropBlueButton': '0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)',
         },
 
         colors: {
@@ -148,9 +149,11 @@ module.exports = {
           '85': '85px',
           '95': '95px',
           '100': '100px',
+          '105': '105px',
           '120': '120px',
           '140': '140px',
           '200': '200px',
+          '210': '210px',
           '215': '215px',
           '220': '220px',
           '250': '250px',

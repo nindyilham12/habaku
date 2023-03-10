@@ -162,7 +162,9 @@
 
             <div class="wrapper-rev">
                 <div class="carousel-rev">
-                    <div class="bottom-0 text-center">
+                    <div class="relative bottom-0 text-center">
+                        <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-0 lg:pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -179,7 +181,9 @@
                         </div>
                     </div>
 
-                    <div class="bottom-0 text-center">
+                    <div class="relative bottom-0 text-center">
+                        <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -196,7 +200,9 @@
                         </div>
                     </div>
 
-                    <div class="bottom-0 text-center">
+                    <div class="relative bottom-0 text-center">
+                        <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -213,7 +219,47 @@
                         </div>
                     </div>
 
-                    <div class="bottom-0 text-center">
+                    <div class="relative bottom-0 text-center">
+                        <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
+                            <p class="pt-0 lg:pt-6 pb-4 text-db-small">
+                                Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
+                                augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies gravida. Sed
+                                felis libero mi aliquam sed a neque bibendum semper.
+                            </p>
+                            <div class="flex space-x-3 justify-center">
+                                <img src="images/3d-avatar-1.png" class="w-max h-max" />
+                                <div class="grid gap-1 text-left">
+                                    <p class="text-mb-small font-semibold">John Doe</p>
+                                    <p class="text-mc-large">John Doe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative bottom-0 text-center">
+                        <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
+                            <p class="pt-6 pb-4 text-db-small">
+                                Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
+                                augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies gravida. Sed
+                                felis libero mi aliquam sed a neque bibendum semper.
+                            </p>
+                            <div class="flex space-x-3 justify-center">
+                                <img src="images/3d-avatar-2.png" class="w-max h-max" />
+                                <div class="grid gap-1 text-left">
+                                    <p class="text-mb-small font-semibold">John Doe</p>
+                                    <p class="text-mc-large">John Doe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative bottom-0 text-center">
+                        <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -328,13 +374,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.carousel-rev').slick({
+            dots: true,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
-            dots: true,
-            centerMode: true,
-            prevArrow: false,
-            nextArrow: false,
+            arrows: true,
             responsive: [
                 {
                     breakpoint: 1024,
