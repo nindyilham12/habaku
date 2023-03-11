@@ -12,14 +12,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Habaku || Beranda</title>
 </head>
 
 <body class="font-lato">
     <!--Navbar-->
-    <div class="fixed w-full z-50">
-        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5">
-            <nav class="nav-desk flex justify-between items-center">
+    <div class="fixed w-full z-50" x-data="{ showBar: false }">
+        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5"
+            :class="{ 'bg-greyscale-0 shadow transition duration-100' : showBar }"
+            @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
+            <nav class="flex justify-between items-center">
                 <a class="block overflow-hidden" href="index.html">
                     <img class="h-40 lg:h-56 w-74 lg:w-100 object-cover" src="images/habaku-logo.png" />
                 </a>
@@ -38,7 +41,7 @@
                         </div>
                     </button>
                     <div id="toggle-menu"
-                        class="container hidden bg-green-100 lg:bg-transparent lg:block pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
+                        class="container hidden lg:block bg-green-100 lg:bg-transparent pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
                         <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
                             <li class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
                                 <a href="index.html">Beranda</a>
@@ -67,7 +70,7 @@
     </div>
 
     <!--Header Banner-->
-    <main>
+    <section>
         <div class="relative h-full">
             <div class="bg-green-200 absolute top-0 w-full h-full"></div>
             <div class="2xl:container mx-auto">
@@ -93,7 +96,7 @@
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!--Section Apa itu Habaku-->
     <section class="bg-bgApaHabakuMob md:bg-bgApaHabakuDesk bg-cover bg-center bg-no-repeat">
@@ -116,13 +119,16 @@
     <!--Section Kenapa Harus Belanja Di Habaku-->
     <section class="bg-green-100">
         <div class="container mx-auto px-4 py-4 md:px-200 lg:py-40">
-            <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2 text-center">
-                Kenapa Harus Belanja di Habaku?
-            </h1>
-            <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
+            <div class="animate-slideDown">
+                <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2 text-center">
+                    Kenapa Harus Belanja di Habaku?
+                </h1>
+                <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
+            </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-40 pt-4 lg:pt-6">
                 <div class="flex lg:grid space-x-4 lg:space-x-0">
-                    <img src="images/easyuse-illustration.png" class="mx-auto w-72 h-72 lg:w-max lg:h-max" />
+                    <img src="images/easyuse-illustration.png"
+                        class="mx-auto w-72 h-72 lg:w-max lg:h-max hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue rounded-full" />
                     <div class="pt-0 lg:pt-4 pb-1 text-left lg:text-center">
                         <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Belanja Lebih Mudah</h1>
                         <p class="text-mb-small lg:text-db-small text-greyscale-80 lg:text-greyscale-100">Belanja kapan
@@ -131,7 +137,8 @@
                     </div>
                 </div>
                 <div class="flex lg:grid space-x-4 lg:space-x-0">
-                    <img src="images/exclusive-deals-illustration.png" class="mx-auto w-72 h-72 lg:w-max lg:h-max" />
+                    <img src="images/exclusive-deals-illustration.png"
+                        class="mx-auto w-72 h-72 lg:w-max lg:h-max hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue rounded-full" />
                     <div class="pt-0 lg:pt-4 pb-1 text-left lg:text-center">
                         <h1 class="text-mh-head7 lg:text-dh-head6">Banyak Penawaran Eksklusif</h1>
                         <p class="text-mb-small lg:text-db-small text-greyscale-80 lg:text-greyscale-100">Berbagai
@@ -140,7 +147,8 @@
                     </div>
                 </div>
                 <div class="flex lg:grid space-x-4 lg:space-x-0">
-                    <img src="images/bonus-rewards-illustration.png" class="mx-auto w-72 h-72 lg:w-max lg:h-max" />
+                    <img src="images/bonus-rewards-illustration.png"
+                        class="mx-auto w-72 h-72 lg:w-max lg:h-max hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue rounded-full" />
                     <div class="pt-0 lg:pt-4 pb-1 text-left lg:text-center">
                         <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Bonus dan Reward</h1>
                         <p class="text-mb-small lg:text-db-small text-greyscale-80 lg:text-greyscale-100">Semakin sering
@@ -164,7 +172,8 @@
                 <div class="carousel-rev">
                     <div class="relative bottom-0 text-center">
                         <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
-                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" />
+                        </div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-0 lg:pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -183,7 +192,8 @@
 
                     <div class="relative bottom-0 text-center">
                         <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
-                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" />
+                        </div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -202,7 +212,8 @@
 
                     <div class="relative bottom-0 text-center">
                         <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
-                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" />
+                        </div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -221,7 +232,8 @@
 
                     <div class="relative bottom-0 text-center">
                         <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
-                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" />
+                        </div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-0 lg:pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -240,7 +252,8 @@
 
                     <div class="relative bottom-0 text-center">
                         <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
-                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" />
+                        </div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -259,7 +272,8 @@
 
                     <div class="relative bottom-0 text-center">
                         <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" /></div>
-                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" /></div>
+                        <div class="absolute bottom-0 right-0"><img src="images/home-quots-down-illustration.png" />
+                        </div>
                         <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
                             <p class="pt-6 pb-4 text-db-small">
                                 Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut sagittis
@@ -400,22 +414,5 @@
         });
     });
 </script>
-
-<!--Change Scroll Navbar Style-->
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            if (scroll > 300) {
-                $("nav-desk").css("background", "nav-white");
-            }
-
-            else {
-                $("nav-desk").css("background", "transparent");
-            }
-        })
-    })
-</script>
-
 
 </html>

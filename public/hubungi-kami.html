@@ -12,13 +12,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Habaku || Hubungi Kami</title>
 </head>
 
 <body class="font-lato">
     <!--Navbar-->
-    <div class="fixed w-full z-50">
-        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5">
+    <div class="fixed w-full z-50" x-data="{ showBar: false }">
+        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5"
+            :class="{ 'bg-greyscale-0 shadow transition duration-100' : showBar }"
+            @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
             <nav class="nav-desk flex justify-between items-center">
                 <a class="block overflow-hidden" href="index.html">
                     <img class="h-40 lg:h-56 w-74 lg:w-100 object-cover" src="images/habaku-logo.png" />
@@ -40,7 +43,8 @@
                     <div id="toggle-menu"
                         class="container hidden bg-green-100 lg:bg-transparent lg:block pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
                         <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
-                            <li class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                            <li
+                                class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
                                 <a href="index.html">Beranda</a>
                             </li>
                             <li
@@ -55,8 +59,7 @@
                                 class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
                                 <a href="tentang-kami.html">Tentang Kami</a>
                             </li>
-                            <li
-                                class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
+                            <li class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
                                 <a href="hubungi-kami.html">Hubungi Kami</a>
                             </li>
                         </ul>
@@ -78,13 +81,16 @@
                             Alamat Habaku
                         </h1>
                         <p class="pt-2 text-mb-small lg:text-db-small text-greyscale-80">
-                            PT. SANO SOLUSI BERDIKARI<br/>
-                            Menara Palma, Lantai 17<br/>
-                            Jalan H.R. Rasuna Said Kavling VI Nomor 9 Kuningan Timur, Setiabudi, Jakarta Selatan, DKI Jakarta (12950).
+                            PT. SANO SOLUSI BERDIKARI<br />
+                            Menara Palma, Lantai 17<br />
+                            Jalan H.R. Rasuna Said Kavling VI Nomor 9 Kuningan Timur, Setiabudi, Jakarta Selatan, DKI
+                            Jakarta (12950).
                         </p>
                     </div>
-                    <a href="https://www.google.com/maps/dir/-6.2068956,106.8296376/PT.+SANO+SOLUSI+BERDIKARI+Menara+Palma,+Lantai+17+Jalan+H.R.+Rasuna+Said+Kavling+VI+Nomor+9+Kuningan+Timur,+Setiabudi,+Jakarta+Selatan,+DKI+Jakarta+(12950)./@-6.2168811,106.822702,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f3f1da7a4369:0x2421b19a6801489c!2m2!1d106.8334201!2d-6.2268668">
-                        <div class="font-bold justify-end items-center flex space-x-2 text-mh-head7 lg:text-dh-head6 text-blue-400">
+                    <a
+                        href="https://www.google.com/maps/dir/-6.2068956,106.8296376/PT.+SANO+SOLUSI+BERDIKARI+Menara+Palma,+Lantai+17+Jalan+H.R.+Rasuna+Said+Kavling+VI+Nomor+9+Kuningan+Timur,+Setiabudi,+Jakarta+Selatan,+DKI+Jakarta+(12950)./@-6.2168811,106.822702,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f3f1da7a4369:0x2421b19a6801489c!2m2!1d106.8334201!2d-6.2268668">
+                        <div
+                            class="font-bold justify-end items-center flex space-x-2 text-mh-head7 lg:text-dh-head6 text-blue-400">
                             <p class="hover:underline underline-offset-8 decoration-blue-400">Lihat Selengkapnya</p>
                             <i class='fas fa-arrow-right'></i>
                         </div>
@@ -97,13 +103,14 @@
     <!--Section Kritik dan Saran-->
     <section class="bg-green-100">
         <div class="container mx-auto px-4 lg:px-200 py-6 lg:py-40 grid lg:flex gap-4 lg:gap-8">
-            <img src="images/kritik-dan-saran-illustartion.png" class="w-95 lg:w-fit h-95 lg:h-fit mx-auto"/>
+            <img src="images/kritik-dan-saran-illustartion.png" class="w-95 lg:w-fit h-95 lg:h-fit mx-auto" />
             <div class="mt-auto text-center lg:text-left">
                 <h1 class="font-bold pb-2 text-mh-head6 lg:text-dh-head4">
-                    Kritik dan Saran 
+                    Kritik dan Saran
                 </h1>
                 <p class="pb-4 text-db-small">
-                    Bantu kami untuk menjadi lebih baik dengan membagikan kritik dan saran serta pertanyaan terkait Habaku.
+                    Bantu kami untuk menjadi lebih baik dengan membagikan kritik dan saran serta pertanyaan terkait
+                    Habaku.
                 </p>
                 <a href="https://forms.gle/GTpcQsSoHKApsXcB6" target="_blank">
                     <button
@@ -112,7 +119,7 @@
                     </button>
                 </a>
             </div>
-            
+
         </div>
     </section>
 
@@ -124,7 +131,8 @@
                 <p class="text-db-small pt-2">Kamu dapat mengajukan pertanyaan terkait layanan Habaku melalui:</p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 pt-2 lg:pt-6">
                     <a href="https://wa.link/roe07y" target="_blank">
-                        <div class="flex space-x-4 p-4 border border-green-400 rounded-lg hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue">
+                        <div
+                            class="flex space-x-4 p-4 border border-green-400 rounded-lg hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue">
                             <div class="text-mh-head3 lg:text-dh-head4 my-auto text-blue-400">
                                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
                             </div>
@@ -133,14 +141,16 @@
                                     WhatsApp
                                 </h1>
                                 <div class="flex space-x-1 text-greyscale-80 items-center">
-                                    <p class="text-mb-small lg:text-db-small font-medium lg:font-semibold">Hubungi kami</p>
+                                    <p class="text-mb-small lg:text-db-small font-medium lg:font-semibold">Hubungi kami
+                                    </p>
                                     <i class='fas fa-arrow-right'></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                     <a href="mailto:sma.habaku@gmail.com" target="_blank">
-                        <div class="flex space-x-4 p-4 border border-green-400 rounded-lg hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue">
+                        <div
+                            class="flex space-x-4 p-4 border border-green-400 rounded-lg hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue">
                             <div class="text-mh-head3 lg:text-dh-head4 my-auto text-blue-400">
                                 <i class="fa fa-envelope-o"></i>
                             </div>
@@ -149,7 +159,8 @@
                                     Email
                                 </h1>
                                 <div class="flex space-x-1 text-greyscale-80 items-center">
-                                    <p class="text-mb-small lg:text-db-small font-medium lg:font-semibold">Hubungi kami</p>
+                                    <p class="text-mb-small lg:text-db-small font-medium lg:font-semibold">Hubungi kami
+                                    </p>
                                     <i class='fas fa-arrow-right'></i>
                                 </div>
                             </div>

@@ -7,14 +7,6 @@
 @tailwind utilities;
 
 @layer utilities {
-    .nav-desk {
-        background: transparent;
-    }
-
-    .nav-white {
-        background: #fff;
-    }
-
     .wrapper-rev {
         width: 100%;
         position: relative;

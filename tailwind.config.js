@@ -2,6 +2,10 @@ module.exports = {
     content: ["public/*.{html,js}"],
     theme: {
       extend: {
+        animation: {
+          'slideDown': 'slide-down 1s ease-in-out',
+        },
+
         backgroundImage: {
           'bgApaHabakuDesk': "url('images/bg-desk-about-habaku.png')",  
           'bgApaHabakuMob': "url('images/bg-mob-about-habaku.png')",  

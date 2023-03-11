@@ -12,14 +12,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Habaku || Produk</title>
 </head>
 
 <body class="font-lato">
     <!--Navbar-->
-    <div class="fixed w-full z-50">
-        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5">
-            <nav class="nav-desk flex justify-between items-center">
+    <div class="fixed w-full z-50" x-data="{ showBar: false }">
+        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5"
+            :class="{ 'bg-greyscale-0 shadow transition duration-100' : showBar }"
+            @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
+            <nav class="flex justify-between items-center">
                 <a class="block overflow-hidden" href="index.html">
                     <img class="h-40 lg:h-56 w-74 lg:w-100 object-cover" src="images/habaku-logo.png" />
                 </a>
@@ -38,7 +41,7 @@
                         </div>
                     </button>
                     <div id="toggle-menu"
-                        class="container hidden bg-green-100 lg:bg-transparent lg:block pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
+                        class="container hidden lg:block bg-green-100 lg:bg-transparent pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
                         <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
                             <li
                                 class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
@@ -66,7 +69,6 @@
         </header>
     </div>
 
-
     <!--Section Habaku's Solution-->
     <section>
         <div class="relative h-full">
@@ -92,7 +94,8 @@
                             <img src="images/produk-kualitas-illustration.png"
                                 class="m-auto w-72 lg:w-fit h-72 lg:h-fit" />
                             <div class="text-left lg:text-center">
-                                <h1 class="font-bold text-mh-head6 lg:text-dh-head6 pb-2">Menyediakan Produk Berkualitas</h1>
+                                <h1 class="font-bold text-mh-head6 lg:text-dh-head6 pb-2">Menyediakan Produk Berkualitas
+                                </h1>
                                 <p class="text-mb-small lg:text-db-small text-greyscale-80">
                                     Bekerja sama dengan distributor terpercaya untuk memberikan produk berkualitas bagi
                                     para mitra usaha Habaku.
@@ -160,9 +163,12 @@
                 Metode Pembayaran
             </h1>
             <div class="flex flex-col lg:flex-row justify-between gap-0 lg:gap-6 pt-0 lg:pt-8">
-                <div class="grid justify-between w-full p-4 text-center rounded-0 lg:rounded-lg bg-transparent lg:bg-green-100">
-                    <h1 class="order-2 lg:order-1 pb-2 lg:pb-0 font-bold text-mh-head6 lg:text-dh-head5 text-green-400">Cash on Delivery</h1>
-                    <img src="images/produk-pembayaran-cod-illustration.png" class="order-1 lg:order-2 w-fit h-fit mx-auto" />
+                <div
+                    class="grid justify-between w-full p-4 text-center rounded-0 lg:rounded-lg bg-transparent lg:bg-green-100">
+                    <h1 class="order-2 lg:order-1 pb-2 lg:pb-0 font-bold text-mh-head6 lg:text-dh-head5 text-green-400">
+                        Cash on Delivery</h1>
+                    <img src="images/produk-pembayaran-cod-illustration.png"
+                        class="order-1 lg:order-2 w-fit h-fit mx-auto" />
                     <p class="order-3 text-db-small text-greyscale-80 pb-0 lg:pb-6">
                         Pembayaran dilakukan secara tunai saat barang sudah sampai ke tempat kamu.
                     </p>
@@ -170,9 +176,12 @@
                 <div class="m-auto">
                     <p class="text-blue-400 text-dh-head5 hidden lg:block">Atau</p>
                 </div>
-                <div class="grid justify-between w-full p-4 text-center rounded-0 lg:rounded-lg bg-transparent lg:bg-green-100">
-                    <h1 class="order-2 lg:order-1 pb-2 lg:pb-0 font-bold text-mh-head6 lg:text-dh-head5 text-green-400">Prepaid Payment</h1>
-                    <img src="images/produk-pembayaran-prepaid-illustration.png" class="order-1 lg:order-2 w-fit h-fit mx-auto" />
+                <div
+                    class="grid justify-between w-full p-4 text-center rounded-0 lg:rounded-lg bg-transparent lg:bg-green-100">
+                    <h1 class="order-2 lg:order-1 pb-2 lg:pb-0 font-bold text-mh-head6 lg:text-dh-head5 text-green-400">
+                        Prepaid Payment</h1>
+                    <img src="images/produk-pembayaran-prepaid-illustration.png"
+                        class="order-1 lg:order-2 w-fit h-fit mx-auto" />
                     <p class="order-3 text-db-small text-greyscale-80 pb-0 lg:pb-6">
                         Pembayaran yang dilakukan sebelum barang diterima oleh pembeli. Barang akan segera diantar
                         ketika pembayaran melalui bank (virtual account) sudah terkonfirmasi.
@@ -184,7 +193,8 @@
 
     <!--Section Promo Spesial-->
     <section class="container mx-auto bg-greyscale-0 bg-none lg:bg-bgHabakuLogoPromo bg-contain bg-center bg-no-repeat">
-        <div class="px-4 lg:px-200 pt-6 lg:pt-80 pb-6 lg:pb-70 text-center grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48">
+        <div
+            class="px-4 lg:px-200 pt-6 lg:pt-80 pb-6 lg:pb-70 text-center grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48">
             <div class="bg-bgHabakuLogoPromo lg:bg-none bg-contain bg-no-repeat">
                 <img src="images/produk-promo-illustration.png" class="w-full h-full" />
             </div>
