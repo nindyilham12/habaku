@@ -138,12 +138,12 @@
                 <!--Previous Button-->
                 <button class="-rotate-180 mx-80 text-blue-400 p-2 rounded-full border border-blue-300" x-on:click="prevPage" :disabled="pageNumber==0"
                     :class="{ 'disabled cursor-not-allowed text-greyscale-40 border-greyscale-40' : pageNumber==0 }">
-                    <span class="material-icons items-center">keyboard_tab</span>
+                    <span class="material-icons">keyboard_tab</span>
                 </button>
 
                 <!-- Display page numbers -->
                 <template x-for="(page,index) in pages()" :key="index">
-                    <button class="mx-2 px-4 py-10 rounded-full"
+                    <button class="mx-2 px-4 py-10 rounded-full text-blue-400 border border-blue-300"
                         :class="{ 'bg-blue-400 text-greyscale-0 font-semibold' : index === pageNumber }" type="button"
                         x-on:click="viewPage(index)">
                         <span x-text="index+1"></span>
