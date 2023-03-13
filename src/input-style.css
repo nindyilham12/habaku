@@ -7,25 +7,36 @@
 @tailwind utilities;
 
 @layer utilities {
+    header {
+        background-color: transparent;
+        transition: background-color 0.2s ease-out;
+        padding: 20px 72px; 
+    }
+    header.scroll {
+        background-color: white;
+        box-shadow: 0 2px 1px -1px #F7F7F7;
+    }
+    @media (min-width: 640px) { 
+        .header {
+            padding: 12px 16px;
+        }
+    }
+
     .wrapper-rev {
         width: 100%;
         position: relative;
     }
-
     .carousel-rev {
         text-align: center;
         width: 100%;
         margin: auto;
     }
-
     .carousel-rev .slick-list {
         padding: 0 !important;
     }
-
     .carousel-rev .slick-slide {
         margin: 20px;
     }
-
     .carousel-rev .slick-dots li button:before {
         font-size: 15px;
         border-radius: 10px;
@@ -33,17 +44,14 @@
         width: 0;
         height: 0;
     }
-
     .carousel-rev .slick-dots li.slick-active button:before {
         color: #1D4AA7;
         opacity: 1;
         background: #1D4AA7;
     }
-
     .carousel-rev .slick-dots {
         text-align: center;
     }
-
     @media (min-width: 1536px) {
         .carousel-rev {
             width: 1118px;

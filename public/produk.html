@@ -13,16 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
     <title>Habaku || Produk</title>
 </head>
 
 <body class="font-lato">
     <!--Navbar-->
-    <div class="fixed w-full z-50" x-data="{ showBar: false }">
-        <header class="2xl:container mx-auto px-4 md:px-72 py-3 lg:py-5"
-            :class="{ 'bg-greyscale-0 shadow transition duration-100' : showBar }"
-            @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
+    <div class="fixed w-full z-50">
+        <header id="navbar" class="2xl:container mx-auto">
             <nav class="flex justify-between items-center">
                 <a class="block overflow-hidden" href="index.html">
                     <img class="h-40 lg:h-56 w-74 lg:w-100 object-cover" src="images/habaku-logo.png" />
@@ -303,6 +301,14 @@
         open.classList.toggle('hidden');
         close.classList.toggle('hidden');
     });
+</script>
+
+<!--Script for Change Navbar When Scroll-->
+<script>
+    window.onscroll = () => {
+    const nav = document.querySelector('#navbar');
+    if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+    };
 </script>
 
 </html>

@@ -2,10 +2,6 @@ module.exports = {
     content: ["public/*.{html,js}"],
     theme: {
       extend: {
-        animation: {
-          'slideDown': 'slide-down 1s ease-in-out',
-        },
-
         backgroundImage: {
           'bgApaHabakuDesk': "url('images/bg-desk-about-habaku.png')",  
           'bgApaHabakuMob': "url('images/bg-mob-about-habaku.png')",  
@@ -111,6 +107,72 @@ module.exports = {
           'mh-head7': ['16px', '24px'],
           'mb-small': ['14px', '21px'],
           'mc-large': ['12px', '18px'],
+        },
+
+        animation: {
+          bounceNoInfinite: 'bounce 2s',
+          fadeInUp: 'fadeInUp 2s',
+          fadeInDown: 'fadeInDown 2s',
+          fadeInRight: 'fadeInRight 2s',
+          fadeInLeft: 'fadeInLeft 2s',
+          scale: 'scale 2s',
+        },
+
+        keyframes: {
+          fadeInUp: {
+            '0%, 50%': {
+                opacity: '0',
+                transform: 'translateY(20%)',
+            },
+            '100%': {
+                opacity: '1',
+                transform: 'translateY(0)',
+            }
+          },
+
+          fadeInDown: {
+            '0%, 50%': {
+                opacity: '0',
+                transform: 'translateY(0)',
+            },
+            '100%': {
+                opacity: '1',
+                transform: 'translateY(20%)',
+            }
+          },
+
+          fadeInRight: {
+            '0%, 50%': {
+               opacity: '0',
+               transform: 'translateX(20%)',
+            },
+            '100%': {
+               opacity: '1',
+               transform: 'translateX(0)',
+            },
+          },
+
+          fadeInLeft: {
+            '0%, 50%': {
+               opacity: '0',
+               transform: 'translateX(0)',
+            },
+            '100%': {
+               opacity: '1',
+               transform: 'translateX(20%)',
+            },
+          },
+
+          scale: {
+            '0%': {
+              opacity: '0',
+              transform: 'scale(0.5)',
+            },
+            '100%': {
+              opacity: '1',
+              transform: 'scale(1)',
+            },
+          },
         },
 
         lineHeight: {
