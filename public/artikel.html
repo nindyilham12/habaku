@@ -134,7 +134,8 @@
             <div class="w-full mx-auto py-6 flex items-center justify-center" x-show="pageCount() > 1">
 
                 <!--Previous Button-->
-                <button class="-rotate-180 mx-80 text-blue-400 p-2 rounded-full border border-blue-300" x-on:click="prevPage" :disabled="pageNumber==0"
+                <button class="-rotate-180 mx-80 text-blue-400 p-2 rounded-full border border-blue-300"
+                    x-on:click="prevPage" :disabled="pageNumber==0"
                     :class="{ 'disabled cursor-not-allowed text-greyscale-40 border-greyscale-40' : pageNumber==0 }">
                     <span class="material-icons">keyboard_tab</span>
                 </button>
@@ -149,26 +150,17 @@
                 </template>
 
                 <!--Next Button-->
-                <button class="mx-80 text-blue-400 p-2 rounded-full border border-blue-300" x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1"
+                <button class="mx-80 text-blue-400 p-2 rounded-full border border-blue-300" x-on:click="nextPage"
+                    :disabled="pageNumber >= pageCount() -1"
                     :class="{ 'disabled cursor-not-allowed text-greyscale-40 border-greyscale-40' : pageNumber >= pageCount() -1 }">
                     <span class="material-icons">keyboard_tab</span>
                 </button>
             </div>
 
             <!--Message to display when no results-->
-            <div
-                class="mx-auto flex items-center font-bold text-red-500"
-                x-show="total===0"
-            >
-                <svg
-                    class="h-8 w-8 text-red-500"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
+            <div class="mx-auto flex items-center font-bold text-red-500" x-show="total===0">
+                <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <circle cx="12" cy="12" r="9" />
                     <line x1="9" y1="10" x2="9.01" y2="10" />
@@ -214,7 +206,8 @@
                             Temukan Habaku di:
                         </h1>
                         <div class="rounded-full w-fit py-1 px-2 bg-green-400 text-green-100">
-                            <a href="https://www.instagram.com/habakuapp/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/habakuapp/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
                         </div>
                     </div>
 
@@ -222,7 +215,7 @@
                         <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
                             Unduh Aplikasi
                         </h1>
-                        <a href="https://play.google.com/store/apps/details?id=com.dataprods.scs">
+                        <a href="https://play.google.com/store/apps/details?id=com.dataprods.scs" target="_blank">
                             <div
                                 class="border border-green-400 flex space-x-1 py-2 pl-2 pr-3 rounded text-green-400 items-center w-fit">
                                 <i class="fab fa-google-play"></i>
@@ -485,8 +478,8 @@
 <!--Script for Change Navbar When Scroll-->
 <script>
     window.onscroll = () => {
-    const nav = document.querySelector('#navbar');
-    if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+        const nav = document.querySelector('#navbar');
+        if (this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
     };
 </script>
 

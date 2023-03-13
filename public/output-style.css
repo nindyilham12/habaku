@@ -1664,6 +1664,10 @@ header.scroll {
     width: 100px;
   }
 
+  .lg\:w-11\/12{
+    width: 91.666667%;
+  }
+
   .lg\:w-262{
     width: 262px;
   }
@@ -1674,10 +1678,6 @@ header.scroll {
 
   .lg\:w-3\/5{
     width: 60%;
-  }
-
-  .lg\:w-4\/5{
-    width: 80%;
   }
 
   .lg\:w-auto{
@@ -1692,10 +1692,6 @@ header.scroll {
   .lg\:w-max{
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .lg\:w-11\/12{
-    width: 91.666667%;
   }
 
   .lg\:grid-cols-2{
