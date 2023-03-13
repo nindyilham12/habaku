@@ -16,8 +16,8 @@
         background-color: white;
         box-shadow: 0 2px 1px -1px #F7F7F7;
     }
-    @media (min-width: 640px) { 
-        .header {
+    @media (max-width: 640px) { 
+        header {
             padding: 12px 16px;
         }
     }
