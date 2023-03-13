@@ -1660,6 +1660,10 @@ header.scroll {
     height: max-content;
   }
 
+  .lg\:h-full{
+    height: 100%;
+  }
+
   .lg\:w-100{
     width: 100px;
   }
@@ -1692,6 +1696,10 @@ header.scroll {
   .lg\:w-max{
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:grid-cols-2{
