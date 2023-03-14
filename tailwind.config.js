@@ -36,6 +36,7 @@ module.exports = {
         dropShadow: {
           'dropBlue': '0px 0px 16px #9BB0DA',
           'dropBlueButton': '0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)',
+          'dropOutlineBlue': '0px 0px 11px #1D4AA7',
         },
 
         colors: {
