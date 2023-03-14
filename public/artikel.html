@@ -114,10 +114,10 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
                 <template x-for="item in filteredArticles" :key="item">
                     <a :href="`${item.link_detail}`">
-                        <div class="group grid gap-4">
+                        <div class="group flex flex-col gap-4">
                             <div
                                 class="group-hover:border-3 group-hover:rounded-xl group-hover:lg:rounded-2xl group-hover:border-blue-400 group-hover:drop-shadow-dropBlue">
-                                <img :src="`${item.image}`" class="rounded-xl lg:rounded-2xl mx-0 lg:mx-auto w-328 lg:w-full h-164 lg:h-full" />
+                                <img :src="`${item.image}`" class="rounded-xl lg:rounded-2xl w-full h-full" />
                             </div>
                             <div class="text-left">
                                 <h1 class="group-hover:text-blue-400 font-bold text-mh-head6 lg:text-dh-head5"
