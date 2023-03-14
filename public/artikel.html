@@ -22,8 +22,8 @@
 <body class="font-lato">
     <!--Navbar-->
     <div class="fixed w-full z-50">
-        <header id="navbar" class="2xl:container mx-auto">
-            <nav class="flex justify-between items-center">
+        <header id="navbar">
+            <nav class="2xl:container mx-auto flex justify-between items-center">
                 <a class="block overflow-hidden" href="index.html">
                     <img class="h-40 lg:h-56 w-74 lg:w-100 object-cover" src="images/habaku-logo.png" />
                 </a>
@@ -42,28 +42,30 @@
                         </div>
                     </button>
                     <div id="toggle-menu"
-                        class="container hidden lg:block bg-green-100 lg:bg-transparent pt-85 lg:pt-0 font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full w-3/4 flex flex-col lg:relative lg:w-auto lg:h-auto">
-                        <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
-                            <li
-                                class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
-                                <a href="index.html">Beranda</a>
-                            </li>
-                            <li
-                                class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
-                                <a href="produk.html">Produk</a>
-                            </li>
-                            <li class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
-                                <a href="artikel.html">Artikel</a>
-                            </li>
-                            <li
-                                class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
-                                <a href="tentang-kami.html">Tentang Kami</a>
-                            </li>
-                            <li
-                                class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
-                                <a href="hubungi-kami.html">Hubungi Kami</a>
-                            </li>
-                        </ul>
+                        class="container hidden lg:block bg-nav-overlay lg:bg-transparent font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full lg:h-auto w-full lg:w-auto flex flex-col lg:relative">
+                        <div class="w-3/4 lg:w-auto h-full lg:h-auto bg-green-100 lg:bg-transparent pt-85 lg:pt-0 ml-auto">
+                            <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
+                                <li class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                    <a href="index.html">Beranda</a>
+                                </li>
+                                <li
+                                    class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                    <a href="produk.html">Produk</a>
+                                </li>
+                                <li
+                                    class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
+                                    <a href="artikel.html">Artikel</a>
+                                </li>
+                                <li
+                                    class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                    <a href="tentang-kami.html">Tentang Kami</a>
+                                </li>
+                                <li
+                                    class="hover:text-blue-400 hover:font-bold hover:rounded-full hover:border hover:border-blue-400 hover:px-4 hover:py-2">
+                                    <a href="hubungi-kami.html">Hubungi Kami</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -115,7 +117,7 @@
                         <div class="group grid gap-4">
                             <div
                                 class="group-hover:border-3 group-hover:rounded-xl group-hover:lg:rounded-2xl group-hover:border-blue-400 group-hover:drop-shadow-dropBlue">
-                                <img :src="`${item.image}`" class="rounded-xl lg:rounded-2xl mx-auto w-full h-full" />
+                                <img :src="`${item.image}`" class="rounded-xl lg:rounded-2xl mx-0 lg:mx-auto w-328 lg:w-full h-164 lg:h-full" />
                             </div>
                             <div class="text-left">
                                 <h1 class="group-hover:text-blue-400 font-bold text-mh-head6 lg:text-dh-head5"
