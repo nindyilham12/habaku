@@ -131,37 +131,15 @@ module.exports = {
             }
           },
 
-          fadeInDown: {
+          fadeIn: {
             '0%, 50%': {
                 opacity: '0',
                 transform: 'translateY(0)',
             },
             '100%': {
                 opacity: '1',
-                transform: 'translateY(20%)',
+                transform: 'translateY(0)',
             }
-          },
-
-          fadeInRight: {
-            '0%, 50%': {
-               opacity: '0',
-               transform: 'translateX(20%)',
-            },
-            '100%': {
-               opacity: '1',
-               transform: 'translateX(0)',
-            },
-          },
-
-          fadeInLeft: {
-            '0%, 50%': {
-               opacity: '0',
-               transform: 'translateX(0)',
-            },
-            '100%': {
-               opacity: '1',
-               transform: 'translateX(20%)',
-            },
           },
 
           scale: {

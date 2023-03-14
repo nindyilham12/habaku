@@ -806,32 +806,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes fadeInDown{
-  0%, 50%{
-    opacity: 0;
-    transform: translateY(0);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(20%);
-  }
-}
-
 .animate-fadeInDown{
   animation: fadeInDown 2s;
-}
-
-@keyframes fadeInLeft{
-  0%, 50%{
-    opacity: 0;
-    transform: translateX(0);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateX(20%);
-  }
 }
 
 .animate-fadeInLeft{
