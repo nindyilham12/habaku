@@ -113,9 +113,6 @@ module.exports = {
         animation: {
           bounceNoInfinite: 'bounce 2s',
           fadeInUp: 'fadeInUp 2s',
-          fadeInDown: 'fadeInDown 2s',
-          fadeInRight: 'fadeInRight 2s',
-          fadeInLeft: 'fadeInLeft 2s',
           scale: 'scale 2s',
         },
 
@@ -124,17 +121,6 @@ module.exports = {
             '0%, 50%': {
                 opacity: '0',
                 transform: 'translateY(20%)',
-            },
-            '100%': {
-                opacity: '1',
-                transform: 'translateY(0)',
-            }
-          },
-
-          fadeIn: {
-            '0%, 50%': {
-                opacity: '0',
-                transform: 'translateY(0)',
             },
             '100%': {
                 opacity: '1',
