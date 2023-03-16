@@ -42,25 +42,22 @@
                     </button>
                     <div id="toggle-menu"
                         class="container hidden lg:block bg-nav-overlay lg:bg-transparent font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full lg:h-auto w-full lg:w-auto flex flex-col lg:relative">
-                        <div class="w-3/4 lg:w-auto h-full lg:h-auto bg-green-100 lg:bg-transparent pt-85 lg:pt-0 ml-auto">
+                        <div
+                            class="w-3/4 lg:w-auto h-full lg:h-auto bg-green-100 lg:bg-transparent pt-85 lg:pt-0 ml-auto">
                             <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
                                 <li class="hover:text-blue-400 hover:font-bold">
                                     <a href="index.html">Beranda</a>
                                 </li>
-                                <li
-                                    class="hover:text-blue-400 hover:font-bold">
+                                <li class="hover:text-blue-400 hover:font-bold">
                                     <a href="produk.html">Produk</a>
                                 </li>
-                                <li
-                                    class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
+                                <li class="text-blue-400 font-bold rounded-full border border-blue-400 px-4 py-2">
                                     <a href="artikel.html">Artikel</a>
                                 </li>
-                                <li
-                                    class="hover:text-blue-400 hover:font-bold">
+                                <li class="hover:text-blue-400 hover:font-bold">
                                     <a href="tentang-kami.html">Tentang Kami</a>
                                 </li>
-                                <li
-                                    class="hover:text-blue-400 hover:font-bold">
+                                <li class="hover:text-blue-400 hover:font-bold">
                                     <a href="hubungi-kami.html">Hubungi Kami</a>
                                 </li>
                             </ul>
@@ -126,9 +123,8 @@
                     </p>
                     <div class="pt-4 flex space-x-4">
                         <p class="text-mb-small lg:text-db-small font-medium text-greyscale-80">Bagikan Artikel Ini</p>
-                        <a href="#">
-                            <i class="material-icons text-blue-400">link</i>
-                        </a>
+                        <i onclick="copyToClipboard()" title="Salin"
+                            class="material-icons text-blue-400 fbtn share share cursor-pointer">link</i>
                     </div>
                 </div>
             </div>
@@ -249,7 +245,7 @@
                 </div>
             </div>
             <p class="text-left lg:text-center text-greyscale-80 px-4 py-4">
-                © 2023 Habaku | Marketplace for Health & Beauty Products
+                © 2023 Habaku | B2B Marketplace for Health & Beauty Products
             </p>
         </div>
     </footer>
@@ -275,6 +271,17 @@
         const nav = document.querySelector('#navbar');
         if (this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
     };
+</script>
+
+<!--Script Copy URL Bagikan Artikel-->
+<script>
+    function copyToClipboard(text) {
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = window.location.href;
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+    }
 </script>
 
 </html>

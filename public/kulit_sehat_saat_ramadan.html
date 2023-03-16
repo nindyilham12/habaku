@@ -81,7 +81,7 @@
                             <li class="px-2"><a href="artikel.html"
                                     class="no-underline text-green-400 hover:text-greyscale-100">Artikel</a></li>
                             <li>/</li>
-                            <li class="px-2">Kulit Sehat saat Ramadan</li>
+                            <li class="px-2 truncate ...">Kulit Sehat saat Ramadan</li>
                         </ol>
                     </div>
                     <img src="images/img-artikel-2.png" class="w-full h-full rounded-xl lg:rounded-2xl" />
@@ -96,36 +96,37 @@
                         asupan nutrisi dan mineral terbatas selama menjalani ibadah tersebut. Tubuh manusia terdiri dari
                         60 persen air dan setiap sistem tubuh bergantung pada air, ketika berpuasa kulit akan terasa
                         sangat kering karena kurangnya cairan. Maka dari itu, HABAKU akan memberikan tips kulit sehat
-                        saat berpuasa!<br/><br/>
+                        saat berpuasa!<br /><br />
 
-                        Ada beberapa tips sederhana yang dapat diterapkan untuk menjaga kesehatan kulit selama berpuasa.<br/>
-                        <span class="font-bold">Apa saja tips yang dapat diterapkan?</span><br/><br/>
+                        Ada beberapa tips sederhana yang dapat diterapkan untuk menjaga kesehatan kulit selama
+                        berpuasa.<br />
+                        <span class="font-bold">Apa saja tips yang dapat diterapkan?</span><br /><br />
 
-                        <span class="font-bold">1. Banyak Minum Air</span><br/>
+                        <span class="font-bold">1. Banyak Minum Air</span><br />
                         Banyak minum air saat sahur dan iftar adalah salah satu kunci agar kulit terdehidrasi. Pilih
-                        makanan yang mengandung banyak air seperti sup dan buah-buahan.<br/><br/>
+                        makanan yang mengandung banyak air seperti sup dan buah-buahan.<br /><br />
 
-                        <span class="font-bold">2. Jauhi Soda dan Kafein</span><br/>
+                        <span class="font-bold">2. Jauhi Soda dan Kafein</span><br />
                         Soda dan kafein dapat menyedot mineral yang diperlukan dalam tubuh sehingga dapat menimbulkan
                         efek negatif pada kulit. Selain itu, minuman tersebut terbukti mudah membuat tubuh cepat
-                        dehidrasi.<br/><br/>
+                        dehidrasi.<br /><br />
 
-                        <span class="font-bold">3. Pakai SPF dan Moisturizer</span><br/>
+                        <span class="font-bold">3. Pakai SPF dan Moisturizer</span><br />
                         Paparan sinar matahari saat berpuasa lebih bahaya dari biasanya! Kulit pun lebih rentan
                         mengalami dehidrasi dan lebih kering yang juga dapat diperburuk oleh paparan sinar matahari.
                         Oleh sebab itu, pastikan untuk menggunakan Sunscreen SPF dan Moisturizer sebelum beraktivitas di
-                        luar agar melindungi kulit dari sinar UV dan menjaga kelembabannya.<br/><br/>
+                        luar agar melindungi kulit dari sinar UV dan menjaga kelembabannya.<br /><br />
 
-                        <span class="font-bold">4. Makan Makanan Sehat dan Hindari Makanan Berlemak</span><br/>
+                        <span class="font-bold">4. Makan Makanan Sehat dan Hindari Makanan Berlemak</span><br />
                         Pastikan banyak mengonsumsi sayur dan buah yang kaya akan vitamin A, B dan C ketika sahur maupun
-                        iftar dan hindari makanan yang mengandung banyak minyak dan santan.<br/><br/>
+                        iftar dan hindari makanan yang mengandung banyak minyak dan santan.<br /><br />
 
-                        <span class="font-bold">5. Konsumsi Suplemen</span><br/>
+                        <span class="font-bold">5. Konsumsi Suplemen</span><br />
                         Selain memperhatikan asupan tubuh, ada baiknya untuk mengkonsumsi vitamin dan suplemen untuk
                         membantu merawat dan mendapatkan kondisi kulit yang sehat dan ideal. Pada hasil penelitian
                         terdapat suplemen khusus kulit yang mengandung berbagai jenis vitamin, mineral, dan asam amino
                         terbukti dapat memberi pengaruh baik pada kesehatan kulit. (The Journal of Clinical and
-                        Aesthetic Dermatology, 2006)<br/><br/>
+                        Aesthetic Dermatology, 2006)<br /><br />
 
                         Anda dapat melengkapi toko/apotek dengan produk skincare, body care hingga oral care dan produk
                         personal care lainnya, melalui aplikasi HABAKU dengan mendapatkan berbagai macam program promo
@@ -133,9 +134,8 @@
                     </p>
                     <div class="pt-4 flex space-x-4">
                         <p class="text-mb-small lg:text-db-small font-medium text-greyscale-80">Bagikan Artikel Ini</p>
-                        <a href="#">
-                            <i class="material-icons text-blue-400">link</i>
-                        </a>
+                        <i onclick="copyToClipboard()" title="Salin"
+                            class="material-icons text-blue-400 fbtn share share cursor-pointer">link</i>
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                 </div>
             </div>
             <p class="text-left lg:text-center text-greyscale-80 px-4 py-4">
-                © 2023 Habaku | Marketplace for Health & Beauty Products
+                © 2023 Habaku | B2B Marketplace for Health & Beauty Products
             </p>
         </div>
     </footer>
@@ -282,6 +282,17 @@
         const nav = document.querySelector('#navbar');
         if (this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
     };
+</script>
+
+<!--Script Copy URL Bagikan Artikel-->
+<script>
+    function copyToClipboard(text) {
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = window.location.href;
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+    }
 </script>
 
 </html>
