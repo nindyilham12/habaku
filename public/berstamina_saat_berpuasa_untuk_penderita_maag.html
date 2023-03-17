@@ -143,10 +143,15 @@
                     </p>
                     <div class="pt-4 flex space-x-4">
                         <p class="text-mb-small lg:text-db-small font-medium text-greyscale-80">Bagikan Artikel Ini</p>
-                        <i onclick="copyToClipboard()" title="Salin"
-                            class="material-icons text-blue-400 fbtn share share cursor-pointer">link</i>
+                        <div class="relative flex flex-col items-center">
+                            <i onclick="copyToClipboard()" title="Salin"
+                                class="material-icons text-blue-400 fbtn share share cursor-pointer">link</i>
+                            <div id="tooltip" class="w-max absolute bottom-0 flex flex-col items-center hidden mb-6">
+                                <span class="relative z-10 p-2 text-mc-large leading-none text-greyscale-0 whitespace-no-wrap bg-greyscale-100 shadow-lg">Tautan telah tersalin</span>
+                                <div class="w-3 h-3 -mt-1 m-auto rotate-45 bg-black"></div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -302,6 +307,11 @@
         inputc.select();
         document.execCommand('copy');
         inputc.parentNode.removeChild(inputc);
+        document.getElementById('tooltip').style.display = 'block';
+        setTimeout(() => {
+            let get = document.getElementById('tooltip');
+            get.style.display = 'none';
+        }, 2000);
     }
 </script>
 

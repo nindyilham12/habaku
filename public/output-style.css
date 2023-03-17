@@ -682,6 +682,10 @@ video {
   margin-top: auto;
 }
 
+.-mt-1{
+  margin-top: -0.25rem;
+}
+
 .block{
   display: block;
 }
@@ -724,10 +728,6 @@ video {
 
 .h-40{
   height: 40px;
-}
-
-.h-5{
-  height: 1.25rem;
 }
 
 .h-52{
@@ -791,10 +791,6 @@ video {
   width: 60%;
 }
 
-.w-5{
-  width: 1.25rem;
-}
-
 .w-72{
   width: 72px;
 }
@@ -822,6 +818,15 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .max-w-3xl{
@@ -1070,6 +1075,11 @@ video {
 
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-greyscale-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
 .bg-bgApaHabakuMob{
@@ -1579,10 +1589,6 @@ header.scroll {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.group:hover .group-hover\:flex{
-  display: flex;
-}
-
 .group:hover .group-hover\:rounded-xl{
   border-radius: 12px;
 }
@@ -1604,10 +1610,6 @@ header.scroll {
 .group:hover .group-hover\:drop-shadow-dropBlue{
   --tw-drop-shadow: drop-shadow(0px 0px 16px #9BB0DA);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.group:focus .group-focus\:flex{
-  display: flex;
 }
 
 @media (min-width: 768px){
