@@ -1632,10 +1632,6 @@ header.scroll {
     display: flex;
   }
 
-  .lg\:grid{
-    display: grid;
-  }
-
   .lg\:hidden{
     display: none;
   }
@@ -1684,10 +1680,6 @@ header.scroll {
   .lg\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:w-4\/5{
-    width: 80%;
   }
 
   .lg\:grid-cols-2{
@@ -1809,10 +1801,6 @@ header.scroll {
 
   .lg\:pb-0{
     padding-bottom: 0px;
-  }
-
-  .lg\:pb-1{
-    padding-bottom: 0.25rem;
   }
 
   .lg\:pb-2{
