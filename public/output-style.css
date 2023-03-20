@@ -1497,10 +1497,6 @@ header.scroll {
   }
 }
 
-.hover\:rounded:hover{
-  border-radius: 0.25rem;
-}
-
 .hover\:rounded-full:hover{
   border-radius: 9999px;
 }
