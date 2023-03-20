@@ -517,40 +517,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
 .visible{
   visibility: visible;
 }
@@ -635,6 +601,14 @@ video {
   order: -9999;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
+.m-0{
+  margin: 0px;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -654,8 +628,8 @@ video {
   margin-bottom: auto;
 }
 
-.-mt-2{
-  margin-top: -0.5rem;
+.-mt-1{
+  margin-top: -0.25rem;
 }
 
 .mb-6{
@@ -680,10 +654,6 @@ video {
 
 .mt-auto{
   margin-top: auto;
-}
-
-.-mt-1{
-  margin-top: -0.25rem;
 }
 
 .block{
@@ -820,13 +790,13 @@ video {
   width: 100%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-2\/5{
+  width: 40%;
 }
 
 .max-w-3xl{
@@ -899,6 +869,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -941,6 +915,10 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-x-6{
@@ -988,6 +966,10 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.whitespace-normal{
+  white-space: normal;
 }
 
 .rounded{
@@ -1069,17 +1051,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-greyscale-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+}
+
 .bg-nav-overlay{
   background-color: rgba(0, 0, 0, 0.35);
 }
 
 .bg-transparent{
   background-color: transparent;
-}
-
-.bg-greyscale-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
 .bg-bgApaHabakuMob{
@@ -1285,6 +1267,10 @@ video {
   padding-top: 85px;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1293,12 +1279,20 @@ video {
   text-align: center;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
 .font-lato{
   font-family: Lato;
 }
 
 .font-montserrat{
   font-family: Montserrat;
+}
+
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-db-large{
@@ -1351,17 +1345,16 @@ video {
   line-height: 24px;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
@@ -1416,11 +1409,6 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .no-underline{
   text-decoration-line: none;
 }
@@ -1441,6 +1429,13 @@ video {
 
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 header {
@@ -1613,30 +1608,8 @@ header.scroll {
 }
 
 @media (min-width: 768px){
-  .md\:bg-bgApaHabakuDesk{
-    background-image: url('images/bg-desk-about-habaku.png');
-  }
-
-  .md\:px-200{
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  .md\:px-72{
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-
-  .md\:pl-200{
-    padding-left: 200px;
-  }
-
-  .md\:pl-72{
-    padding-left: 72px;
-  }
-
-  .md\:pr-0{
-    padding-right: 0px;
+  .md\:w-2\/5{
+    width: 40%;
   }
 }
 
@@ -1667,6 +1640,10 @@ header.scroll {
 
   .lg\:order-last{
     order: 9999;
+  }
+
+  .lg\:m-auto{
+    margin: auto;
   }
 
   .lg\:ml-80{
@@ -1726,6 +1703,10 @@ header.scroll {
     width: 60%;
   }
 
+  .lg\:w-416{
+    width: 416px;
+  }
+
   .lg\:w-auto{
     width: auto;
   }
@@ -1733,6 +1714,14 @@ header.scroll {
   .lg\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-2\/5{
+    width: 40%;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:grid-cols-2{
@@ -1743,20 +1732,16 @@ header.scroll {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:flex-row{
     flex-direction: row;
   }
 
-  .lg\:gap-2{
-    gap: 0.5rem;
+  .lg\:flex-col{
+    flex-direction: column;
   }
 
-  .lg\:gap-20{
-    gap: 5rem;
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
 
   .lg\:gap-4{
@@ -1775,14 +1760,16 @@ header.scroll {
     gap: 1.5rem;
   }
 
+  .lg\:gap-74{
+    gap: 74px;
+  }
+
   .lg\:gap-8{
     gap: 2rem;
   }
 
-  .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0px * var(--tw-space-x-reverse));
-    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  .lg\:gap-52{
+    gap: 52px;
   }
 
   .lg\:rounded-2xl{
@@ -1800,6 +1787,10 @@ header.scroll {
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:bg-bgApaHabakuDesk{
+    background-image: url('images/bg-desk-about-habaku.png');
   }
 
   .lg\:bg-bgHabakuLogoPromo{
@@ -1852,6 +1843,10 @@ header.scroll {
 
   .lg\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .lg\:pb-1{
+    padding-bottom: 0.25rem;
   }
 
   .lg\:pb-2{
@@ -1910,6 +1905,14 @@ header.scroll {
     padding-top: 80px;
   }
 
+  .lg\:pt-2{
+    padding-top: 0.5rem;
+  }
+
+  .lg\:pt-5{
+    padding-top: 1.25rem;
+  }
+
   .lg\:text-left{
     text-align: left;
   }
@@ -1926,6 +1929,11 @@ header.scroll {
   .lg\:text-db-small{
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .lg\:text-dc-large{
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .lg\:text-dh-head4{
@@ -1973,7 +1981,75 @@ header.scroll {
     width: fit-content;
   }
 
+  .xl\:w-3\/5{
+    width: 60%;
+  }
+
+  .xl\:w-3\/4{
+    width: 75%;
+  }
+
+  .xl\:w-4\/5{
+    width: 80%;
+  }
+
   .xl\:max-w-5xl{
     max-width: 64rem;
+  }
+
+  .xl\:max-w-4xl{
+    max-width: 56rem;
+  }
+
+  .xl\:px-200{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:w-3\/5{
+    width: 60%;
+  }
+
+  .\32xl\:w-3\/4{
+    width: 75%;
+  }
+
+  .\32xl\:w-4\/5{
+    width: 80%;
+  }
+
+  .\32xl\:w-2\/5{
+    width: 40%;
+  }
+
+  .\32xl\:gap-160{
+    gap: 160px;
+  }
+
+  .\32xl\:gap-180{
+    gap: 180px;
+  }
+
+  .\32xl\:gap-52{
+    gap: 52px;
+  }
+
+  .\32xl\:gap-70{
+    gap: 70px;
+  }
+
+  .\32xl\:gap-100{
+    gap: 100px;
+  }
+
+  .\32xl\:px-200{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .\32xl\:pl-200{
+    padding-left: 200px;
   }
 }

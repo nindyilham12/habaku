@@ -42,7 +42,7 @@
                         </div>
                     </button>
                     <div id="toggle-menu"
-                        class="container hidden lg:block bg-nav-overlay lg:bg-transparent font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full lg:h-auto w-full lg:w-auto flex flex-col lg:relative">
+                        class="2xl:container hidden lg:block bg-nav-overlay lg:bg-transparent font-medium text-greyscale-80 text-mb-large lg:text-db-large right-0 top-0 text-left fixed h-full lg:h-auto w-full lg:w-auto flex flex-col lg:relative">
                         <div
                             class="w-3/4 lg:w-auto h-full lg:h-auto bg-green-100 lg:bg-transparent pt-85 lg:pt-0 ml-auto">
                             <ul class="flex flex-col lg:flex-row gap-x-6 gap-y-6 items-center">
@@ -75,7 +75,7 @@
             <div class="bg-green-200 absolute top-0 w-full h-full"></div>
             <div class="2xl:container mx-auto">
                 <div
-                    class="relative grid grid-cols-1 lg:grid-cols-2 px-0 md:pl-72 md:pr-0 pt-72 pb-48 lg:pb-0 justify-between">
+                    class="relative grid grid-cols-1 lg:grid-cols-2 px-0 lg:pl-72 lg:pr-0 pt-72 pb-48 lg:pb-0 justify-between">
                     <div class="block lg:hidden" x-data="{ visible: false }" x-intersect="visible = true">
                         <div :class="visible ? 'animate-scale' : ''">
                             <img src="images/hero-homepage-mob-illustration.png" class="w-full h-full" />
@@ -83,16 +83,18 @@
                     </div>
 
                     <div class="my-auto" x-data="{ visible: false }" x-intersect="visible = true">
-                        <div class="text-center lg:text-left grid gap-4 px-4 lg:px-0"
+                        <div class="text-center lg:text-left flex flex-col gap-4 px-4 lg:px-0"
                             :class="visible ? 'animate-fadeInUp' : ''">
                             <h1 class="font-montserrat text-dh-head5 lg:text-dh-head4 text-greyscale-100">Solusi
-                                Tepat Belanja <br />
+                                Belanja <br />
                                 <span class="text-blue-400">Hemat</span> dan
-                                <span class="text-blue-400">Cepat</span>.
+                                <span class="text-blue-400">Mudah</span>.
                             </h1>
-                            <p class="text-mb-small lg:text-db-small font-medium w-full lg:w-3/4">
-                                Membantu para pelaku usaha dalam melakukan pengadaan barang dengan proses belanja yang
-                                TEPAT, HEMAT, dan CEPAT untuk mendapatkan keuntungan maksimal.
+                            <p class="text-db-large lg:text-dh-head6 font-medium w-full lg:w-3/4">
+                                Membantu pengadaan barang para pelaku usaha di bidang kesehatan dan
+                                kecantikan.<br /><br />
+                                Dapatkan pengalaman belanja terbaik untuk kebutuhan usaha Anda bersama
+                                kami!
                             </p>
                             <p class="font-semibold text-db-large text-blue-400 italic">#PastiLebihUntung</p>
                             <a href="https://play.google.com/store/apps/details?id=com.dataprods.scs" target="_blank"
@@ -116,68 +118,71 @@
     </section>
 
     <!--Section Apa itu Habaku-->
-    <section class="bg-bgApaHabakuMob md:bg-bgApaHabakuDesk bg-cover bg-center bg-no-repeat">
-        <div class="container mx-auto px-4 py-4 md:px-72 lg:py-40 text-center">
-            <div x-data="{ visible: false }" x-intersect="visible = true">
-                <div :class="visible ? 'animate-fadeInUp' : ''">
-                    <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2">
-                        Apa itu Habaku?
-                    </h1>
-                    <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
-                    <p class="pt-6 pb-8 w-full lg:w-3/5 mx-auto text-mb-small lg:text-db-small text-greyscale-80">
-                        Habaku adalah B2B marketplace untuk pelaku usaha retail yang menyediakan produk kesehatan,
-                        kecantikan serta mom & baby untuk mendapatkan produk yang berkualitas dan beragam dengan jumlah
-                        yang tidak terbatas dan harga bersahabat.
-                        <br /><br />
-                        Kami mengutamakan kepuasan pelanggan dengan menyediakan platform belanja yang mudah diakses,
-                        proses belanja yang mudah, pilihan metode pembayaran yang akurat, serta pengiriman yang aman.
-                    </p>
+    <section class="bg-bgApaHabakuMob lg:bg-bgApaHabakuDesk bg-cover bg-center bg-no-repeat">
+        <div class="2xl:container mx-auto ">
+            <div class="px-4 py-4 lg:px-72 2xl:px-200 lg:py-40 text-center">
+                <div x-data="{ visible: false }" x-intersect="visible = true">
+                    <div :class="visible ? 'animate-fadeInUp' : ''">
+                        <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2">
+                            Apa itu Habaku?
+                        </h1>
+                        <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
+                        <p class="pt-6 pb-8 w-full 2xl:w-4/5 mx-auto text-mb-small lg:text-db-small text-greyscale-80">
+                            Habaku - B2B Marketplace bagi pelaku usaha retail di bidang kesehatan dan kecantikan yang
+                            menawarkan kemudahan dan fleksibilitas dalam memperoleh produk berkualitas asli dengan harga
+                            yang bersahabat.
+                            <br /><br />
+                            Nikmati pengalaman belanja kebutuhan toko dengan mudah dalam satu genggamaan dengan pilihan
+                            metode pembayaran serta pengiriman yang aman. Kepuasan Anda adalah prioritas kami!
+                        </p>
+                    </div>
                 </div>
+                <img src="images/about-habaku-illustration.png" class="w-200 h-120 lg:w-fit lg:h-fit m-auto" />
             </div>
-            <img src="images/about-habaku-illustration.png" class="w-200 h-120 lg:w-fit lg:h-fit m-auto" />
         </div>
     </section>
 
     <!--Section Kenapa Harus Belanja Di Habaku-->
     <section class="bg-green-100">
-        <div class="container mx-auto px-4 py-4 md:px-200 lg:py-40">
-            <div x-data="{ visible: false }" x-intersect="visible = true">
-                <div :class="visible ? 'animate-fadeInUp' : ''">
-                    <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2 text-center">
-                        Kenapa Harus Belanja di Habaku?
-                    </h1>
-                    <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-40 pt-4 lg:pt-6">
-                <div class="flex lg:grid space-x-4 lg:space-x-0">
-                    <img src="images/easyuse-illustration.png"
-                        class="mx-auto w-72 h-72 lg:w-fit lg:h-fit hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue rounded-full" />
-                    <div class="pt-0 lg:pt-4 pb-1 text-left lg:text-center">
-                        <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Belanja Lebih Mudah</h1>
-                        <p class="text-mb-small lg:text-db-small text-greyscale-80 lg:text-greyscale-100">Belanja kapan
-                            saja dengan pembayaran yang mudah,
-                            serta pengiriman yang cepat.</p>
+        <div class="2xl:container mx-auto ">
+            <div class="px-4 py-4 lg:px-72 2xl:px-200 lg:py-40">
+                <div x-data="{ visible: false }" x-intersect="visible = true">
+                    <div :class="visible ? 'animate-fadeInUp' : ''">
+                        <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2 text-center">
+                            Kenapa Harus Belanja di Habaku?
+                        </h1>
+                        <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
                     </div>
                 </div>
-                <div class="flex lg:grid space-x-4 lg:space-x-0">
-                    <img src="images/exclusive-deals-illustration.png"
-                        class="mx-auto w-72 h-72 lg:w-fit lg:h-fit hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue rounded-full" />
-                    <div class="pt-0 lg:pt-4 pb-1 text-left lg:text-center">
-                        <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Banyak Penawaran Eksklusif</h1>
-                        <p class="text-mb-small lg:text-db-small text-greyscale-80 lg:text-greyscale-100">Berbagai
-                            tawaran eksklusif dari mulai diskon produk,
-                            voucher spesial, hingga gratis ongkir.</p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-40 pt-4 lg:pt-8">
+                    <div class="flex lg:grid gap-4 justify-between">
+                        <img src="images/easyuse-illustration.png" class="mx-auto w-72 lg:w-fit h-72 lg:h-fit" />
+                        <div class="flex flex-col gap-2 text-left lg:text-center w-full lg:w-3/4 m-auto">
+                            <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Belanja Lebih Mudah</h1>
+                            <p class="text-mb-small lg:text-db-small text-greyscale-80">Belanja kapan
+                                saja dengan pembayaran yang mudah,
+                                serta pengiriman yang efisien.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex lg:grid space-x-4 lg:space-x-0">
-                    <img src="images/bonus-rewards-illustration.png"
-                        class="mx-auto w-72 h-72 lg:w-fit lg:h-fit hover:border-3 hover:border-blue-400 hover:drop-shadow-dropBlue rounded-full" />
-                    <div class="pt-0 lg:pt-4 pb-1 text-left lg:text-center">
-                        <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Bonus dan Reward</h1>
-                        <p class="text-mb-small lg:text-db-small text-greyscale-80 lg:text-greyscale-100">Semakin sering
-                            belanja, semakin banyak peluang untuk
-                            dapat bonus dan reward spesial.</p>
+                    <div class="flex lg:grid gap-4 justify-between">
+                        <img src="images/exclusive-deals-illustration.png"
+                            class="mx-auto w-72 lg:w-fit h-72 lg:h-fit" />
+                        <div class="flex flex-col gap-2 text-left lg:text-center w-full lg:w-3/4 m-auto">
+                            <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Banyak Penawaran Eksklusif</h1>
+                            <p class="text-mb-small lg:text-db-small text-greyscale-80">Berbagai
+                                tawaran eksklusif dari mulai diskon produk,
+                                voucher spesial, hingga gratis ongkir.</p>
+                        </div>
+                    </div>
+                    <div class="flex lg:grid gap-4 justify-between">
+                        <img src="images/bonus-rewards-illustration.png" class="mx-auto w-72 lg:w-fit h-72 lg:h-fit" />
+                        <div class="pt-0 lg:pt-4 pb-0 lg:pb-1 text-left lg:text-center w-full lg:w-3/4 m-auto">
+                            <h1 class="font-bold text-mh-head7 lg:text-dh-head6">Bonus dan Reward</h1>
+                            <p class="text-mb-small lg:text-db-small text-greyscale-80">Semakin sering
+                                belanja, semakin banyak peluang untuk
+                                dapat bonus dan reward spesial.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,158 +191,172 @@
 
     <!--Section Apa Kata Mereka-->
     <section class="bg-greyscale-0">
-        <div class="container mx-auto px-4 py-4 lg:px-200 lg:py-40">
-            <div x-data="{ visible: false }" x-intersect="visible = true">
-                <div :class="visible ? 'animate-scale' : ''">
-                    <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2 text-center">
-                        Apa Kata Mereka?
-                    </h1>
-                    <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
+        <div class="2xl:container mx-auto">
+            <div class="px-4 py-4 lg:px-72 2xl:px-200 lg:py-40">
+                <div x-data="{ visible: false }" x-intersect="visible = true">
+                    <div :class="visible ? 'animate-scale' : ''">
+                        <h1 class="font-bold text-mh-head7 lg:text-dh-head4 pb-2 text-center">
+                            Apa Kata Mereka?
+                        </h1>
+                        <div class="border-b-4 border-blue-400 rounded-full w-95 lg:w-262 mx-auto"></div>
+                    </div>
                 </div>
-            </div>
-            <div x-data="{ visible: false }" x-intersect="visible = true">
-                <div :class="visible ? 'animate-fadeInUp' : ''">
-                    <div class="wrapper-rev">
-                        <div class="carousel-rev">
-                            <div class="relative bottom-0 text-center">
-                                <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" />
-                                </div>
-                                <div class="absolute bottom-0 right-0"><img
-                                        src="images/home-quots-down-illustration.png" />
-                                </div>
-                                <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
-                                    <p class="pt-0 lg:pt-6 pb-4 text-db-small">
-                                        Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut
-                                        sagittis
-                                        augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
-                                        gravida. Sed
-                                        felis libero mi aliquam sed a neque bibendum semper.
-                                    </p>
-                                    <div class="flex space-x-3 justify-center">
-                                        <img src="images/3d-avatar-1.png" class="w-fit h-fit" />
-                                        <div class="grid gap-1 text-left">
-                                            <p class="text-mb-small font-semibold">John Doe</p>
-                                            <p class="text-mc-large">John Doe</p>
+                <div x-data="{ visible: false }" x-intersect="visible = true">
+                    <div :class="visible ? 'animate-fadeInUp' : ''">
+                        <div class="wrapper-rev">
+                            <div class="carousel-rev">
+                                <div class="relative bottom-0 text-center">
+                                    <div class="absolute top-0 left-0"><img
+                                            src="images/home-quots-up-illustration.png" />
+                                    </div>
+                                    <div class="absolute bottom-0 right-0"><img
+                                            src="images/home-quots-down-illustration.png" />
+                                    </div>
+                                    <div class="w-full mx-auto text-greyscale-80">
+                                        <p class="pt-0 lg:pt-6 pb-4 text-db-small w-full xl:w-4/5 mx-auto">
+                                            Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare.
+                                            Ut
+                                            sagittis
+                                            augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
+                                            gravida. Sed
+                                            felis libero mi aliquam sed a neque bibendum semper.
+                                        </p>
+                                        <div class="flex space-x-3 justify-center">
+                                            <img src="images/3d-avatar-1.png" class="w-fit h-fit" />
+                                            <div class="grid gap-1 text-left">
+                                                <p class="text-mb-small font-semibold">John Doe</p>
+                                                <p class="text-mc-large">John Doe</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="relative bottom-0 text-center">
-                                <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" />
-                                </div>
-                                <div class="absolute bottom-0 right-0"><img
-                                        src="images/home-quots-down-illustration.png" />
-                                </div>
-                                <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
-                                    <p class="pt-6 pb-4 text-db-small">
-                                        Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut
-                                        sagittis
-                                        augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
-                                        gravida. Sed
-                                        felis libero mi aliquam sed a neque bibendum semper.
-                                    </p>
-                                    <div class="flex space-x-3 justify-center">
-                                        <img src="images/3d-avatar-2.png" class="w-fit h-fit" />
-                                        <div class="grid gap-1 text-left">
-                                            <p class="text-mb-small font-semibold">John Doe</p>
-                                            <p class="text-mc-large">John Doe</p>
+                                <div class="relative bottom-0 text-center">
+                                    <div class="absolute top-0 left-0"><img
+                                            src="images/home-quots-up-illustration.png" />
+                                    </div>
+                                    <div class="absolute bottom-0 right-0"><img
+                                            src="images/home-quots-down-illustration.png" />
+                                    </div>
+                                    <div class="w-full mx-auto text-greyscale-80">
+                                        <p class="pt-6 pb-4 text-db-small w-full xl:w-4/5 mx-auto">
+                                            Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare.
+                                            Ut
+                                            sagittis
+                                            augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
+                                            gravida. Sed
+                                            felis libero mi aliquam sed a neque bibendum semper.
+                                        </p>
+                                        <div class="flex space-x-3 justify-center">
+                                            <img src="images/3d-avatar-2.png" class="w-fit h-fit" />
+                                            <div class="grid gap-1 text-left">
+                                                <p class="text-mb-small font-semibold">John Doe</p>
+                                                <p class="text-mc-large">John Doe</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="relative bottom-0 text-center">
-                                <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" />
-                                </div>
-                                <div class="absolute bottom-0 right-0"><img
-                                        src="images/home-quots-down-illustration.png" />
-                                </div>
-                                <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
-                                    <p class="pt-6 pb-4 text-db-small">
-                                        Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut
-                                        sagittis
-                                        augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
-                                        gravida. Sed
-                                        felis libero mi aliquam sed a neque bibendum semper.
-                                    </p>
-                                    <div class="flex space-x-3 justify-center">
-                                        <img src="images/3d-avatar-3.png" class="w-fit h-fit" />
-                                        <div class="grid gap-1 text-left">
-                                            <p class="text-mb-small font-semibold">John Doe</p>
-                                            <p class="text-mc-large">John Doe</p>
+                                <div class="relative bottom-0 text-center">
+                                    <div class="absolute top-0 left-0"><img
+                                            src="images/home-quots-up-illustration.png" />
+                                    </div>
+                                    <div class="absolute bottom-0 right-0"><img
+                                            src="images/home-quots-down-illustration.png" />
+                                    </div>
+                                    <div class="w-full mx-auto text-greyscale-80">
+                                        <p class="pt-6 pb-4 text-db-small w-full xl:w-4/5 mx-auto">
+                                            Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare.
+                                            Ut
+                                            sagittis
+                                            augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
+                                            gravida. Sed
+                                            felis libero mi aliquam sed a neque bibendum semper.
+                                        </p>
+                                        <div class="flex space-x-3 justify-center">
+                                            <img src="images/3d-avatar-3.png" class="w-fit h-fit" />
+                                            <div class="grid gap-1 text-left">
+                                                <p class="text-mb-small font-semibold">John Doe</p>
+                                                <p class="text-mc-large">John Doe</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="relative bottom-0 text-center">
-                                <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" />
-                                </div>
-                                <div class="absolute bottom-0 right-0"><img
-                                        src="images/home-quots-down-illustration.png" />
-                                </div>
-                                <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
-                                    <p class="pt-0 lg:pt-6 pb-4 text-db-small">
-                                        Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut
-                                        sagittis
-                                        augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
-                                        gravida. Sed
-                                        felis libero mi aliquam sed a neque bibendum semper.
-                                    </p>
-                                    <div class="flex space-x-3 justify-center">
-                                        <img src="images/3d-avatar-1.png" class="w-fit h-fit" />
-                                        <div class="grid gap-1 text-left">
-                                            <p class="text-mb-small font-semibold">John Doe</p>
-                                            <p class="text-mc-large">John Doe</p>
+                                <div class="relative bottom-0 text-center">
+                                    <div class="absolute top-0 left-0"><img
+                                            src="images/home-quots-up-illustration.png" />
+                                    </div>
+                                    <div class="absolute bottom-0 right-0"><img
+                                            src="images/home-quots-down-illustration.png" />
+                                    </div>
+                                    <div class="w-full mx-auto text-greyscale-80">
+                                        <p class="pt-0 lg:pt-6 pb-4 text-db-small w-full xl:w-4/5 mx-auto">
+                                            Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare.
+                                            Ut
+                                            sagittis
+                                            augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
+                                            gravida. Sed
+                                            felis libero mi aliquam sed a neque bibendum semper.
+                                        </p>
+                                        <div class="flex space-x-3 justify-center">
+                                            <img src="images/3d-avatar-1.png" class="w-fit h-fit" />
+                                            <div class="grid gap-1 text-left">
+                                                <p class="text-mb-small font-semibold">John Doe</p>
+                                                <p class="text-mc-large">John Doe</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="relative bottom-0 text-center">
-                                <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" />
-                                </div>
-                                <div class="absolute bottom-0 right-0"><img
-                                        src="images/home-quots-down-illustration.png" />
-                                </div>
-                                <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
-                                    <p class="pt-6 pb-4 text-db-small">
-                                        Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut
-                                        sagittis
-                                        augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
-                                        gravida. Sed
-                                        felis libero mi aliquam sed a neque bibendum semper.
-                                    </p>
-                                    <div class="flex space-x-3 justify-center">
-                                        <img src="images/3d-avatar-2.png" class="w-fit h-fit" />
-                                        <div class="grid gap-1 text-left">
-                                            <p class="text-mb-small font-semibold">John Doe</p>
-                                            <p class="text-mc-large">John Doe</p>
+                                <div class="relative bottom-0 text-center">
+                                    <div class="absolute top-0 left-0"><img
+                                            src="images/home-quots-up-illustration.png" />
+                                    </div>
+                                    <div class="absolute bottom-0 right-0"><img
+                                            src="images/home-quots-down-illustration.png" />
+                                    </div>
+                                    <div class="w-full mx-auto text-greyscale-80">
+                                        <p class="pt-6 pb-4 text-db-small w-full xl:w-4/5 mx-auto">
+                                            Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare.
+                                            Ut
+                                            sagittis
+                                            augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
+                                            gravida. Sed
+                                            felis libero mi aliquam sed a neque bibendum semper.
+                                        </p>
+                                        <div class="flex space-x-3 justify-center">
+                                            <img src="images/3d-avatar-2.png" class="w-fit h-fit" />
+                                            <div class="grid gap-1 text-left">
+                                                <p class="text-mb-small font-semibold">John Doe</p>
+                                                <p class="text-mc-large">John Doe</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="relative bottom-0 text-center">
-                                <div class="absolute top-0 left-0"><img src="images/home-quots-up-illustration.png" />
-                                </div>
-                                <div class="absolute bottom-0 right-0"><img
-                                        src="images/home-quots-down-illustration.png" />
-                                </div>
-                                <div class="max-w-3xl xl:max-w-5xl mx-auto text-greyscale-100">
-                                    <p class="pt-6 pb-4 text-db-small">
-                                        Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare. Ut
-                                        sagittis
-                                        augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
-                                        gravida. Sed
-                                        felis libero mi aliquam sed a neque bibendum semper.
-                                    </p>
-                                    <div class="flex space-x-3 justify-center">
-                                        <img src="images/3d-avatar-3.png" class="w-fit h-fit" />
-                                        <div class="grid gap-1 text-left">
-                                            <p class="text-mb-small font-semibold">John Doe</p>
-                                            <p class="text-mc-large">John Doe</p>
+                                <div class="relative bottom-0 text-center">
+                                    <div class="absolute top-0 left-0"><img
+                                            src="images/home-quots-up-illustration.png" />
+                                    </div>
+                                    <div class="absolute bottom-0 right-0"><img
+                                            src="images/home-quots-down-illustration.png" />
+                                    </div>
+                                    <div class="w-full mx-auto text-greyscale-80">
+                                        <p class="pt-6 pb-4 text-db-small w-full xl:w-4/5 mx-auto">
+                                            Lorem ipsum dolor sit amet consectetur. Facilisi vitae tortor lorem ornare.
+                                            Ut
+                                            sagittis
+                                            augue quam sagittis et velit pulvinar rutrum aliquet. Sed at at ultricies
+                                            gravida. Sed
+                                            felis libero mi aliquam sed a neque bibendum semper.
+                                        </p>
+                                        <div class="flex space-x-3 justify-center">
+                                            <img src="images/3d-avatar-3.png" class="w-fit h-fit" />
+                                            <div class="grid gap-1 text-left">
+                                                <p class="text-mb-small font-semibold">John Doe</p>
+                                                <p class="text-mc-large">John Doe</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -351,9 +370,9 @@
 
     <!--Section Download Aplikasi Habaku-->
     <section class="bg-green-200">
-        <div class="container mx-auto grid grid-cols-2" x-data="{ visible: false }" x-intersect="visible = true">
-            <div :class="visible ? 'animate-scale' : ''">
-                <div class="flex flex-col gap-y-2 text-left pl-4 py-4 md:pl-200 lg:py-40 my-auto">
+        <div class="2xl:container mx-auto grid grid-cols-2" x-data="{ visible: false }" x-intersect="visible = true">
+            <div class="my-auto" :class="visible ? 'animate-scale' : ''">
+                <div class="flex flex-col gap-y-2 text-left pl-4 py-4 lg:pl-200 lg:py-40 my-auto">
                     <h1 class="text-mb-small lg:text-dh-head5 font-bold">Download Aplikasi Habaku Sekarang!
                     </h1>
                     <p class="text-mc-large lg:text-db-small">Dapatkan voucher spesial untuk pengguna pertama, dan promo
@@ -374,10 +393,10 @@
 
     <!--Footer-->
     <footer class="bg-green-100">
-        <div class="container mx-auto">
+        <div class="2xl:container mx-auto">
             <div class="py-8 px-8 lg:px-72 lg:py-40">
                 <img src="images/habaku-logo.png" class="w-85 h-52" />
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-20 pt-6 text-greyscale-100">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-74 2xl:gap-160 pt-6 text-greyscale-100">
                     <div>
                         <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
                             Perusahaan
@@ -389,37 +408,45 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="lg:w-416">
                         <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
                             Hubungi Kami
                         </h1>
                         <div class="grid gap-1 lg:gap-2 text-mb-small lg:text-db-small text-green-400 font-semibold">
-                            <a href="hubungi-kami.html">Kontak</a>
-                            <a href="hubungi-kami.html">Lokasi</a>
+                            <p class="text-mb-small lg:text-db-small text-greyscale-80 font-normal">
+                                PT. SANO SOLUSI BERDIKARI<br />
+                                Menara Palma, Lantai 17<br />
+                                Jalan H.R. Rasuna Said Kavling VI
+                                Nomor 9 Kuningan Timur, Setiabudi, Jakarta Selatan, DKI Jakarta (12950).
+                            </p>
+                            <a href="mailto:sma.habaku@gmail.com" target="_blank">sma.habaku@gmail.com</a>
+                            <a href="https://wa.link/5o1zcu" target="_blank">whatsapp</a>
                         </div>
                     </div>
 
-                    <div class="text-left">
-                        <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
-                            Temukan Habaku di:
-                        </h1>
-                        <div class="rounded-full w-fit py-1 px-2 bg-green-400 text-green-100">
-                            <a href="https://www.instagram.com/habakuapp/" target="_blank"><i
-                                    class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="text-left">
-                        <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
-                            Unduh Aplikasi
-                        </h1>
-                        <a href="https://play.google.com/store/apps/details?id=com.dataprods.scs" target="_blank">
-                            <div
-                                class="border border-green-400 flex space-x-1 py-2 pl-2 pr-3 rounded text-green-400 items-center w-fit">
-                                <i class="fab fa-google-play"></i>
-                                <p class="text-db-small font-semibold">Google Play</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-74 2xl:gap-180 text-greyscale-100">
+                        <div class="text-left w-full">
+                            <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
+                                Temukan Habaku di:
+                            </h1>
+                            <div class="rounded-full w-fit py-1 px-2 bg-green-400 text-green-100">
+                                <a href="https://www.instagram.com/habakuapp/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a>
                             </div>
-                        </a>
+                        </div>
+
+                        <div class="text-left w-full">
+                            <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
+                                Unduh Aplikasi
+                            </h1>
+                            <a href="https://play.google.com/store/apps/details?id=com.dataprods.scs" target="_blank">
+                                <div
+                                    class="border border-green-400 flex space-x-1 py-2 pl-2 pr-3 rounded text-green-400 items-center w-fit">
+                                    <i class="fab fa-google-play"></i>
+                                    <p class="text-db-small font-semibold">Google Play</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
