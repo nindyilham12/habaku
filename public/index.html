@@ -71,18 +71,18 @@
 
     <!--Header Banner-->
     <section>
-        <div class="relative h-full">
+        <div class="relative h-full pt-56 lg:pt-85">
             <div class="bg-green-200 absolute top-0 w-full h-full"></div>
             <div class="2xl:container mx-auto">
                 <div
-                    class="relative grid grid-cols-1 lg:grid-cols-2 px-0 lg:pl-72 lg:pr-0 pt-72 pb-48 lg:pb-0 justify-between">
+                    class="relative grid grid-cols-1 lg:grid-cols-3 px-0 lg:pl-72 lg:pr-0 pt-0 lg:pt-85 2xl:pt-40 justify-center">
                     <div class="block lg:hidden" x-data="{ visible: false }" x-intersect="visible = true">
                         <div :class="visible ? 'animate-scale' : ''">
                             <img src="images/hero-homepage-mob-illustration.png" class="w-full h-full" />
                         </div>
                     </div>
 
-                    <div class="my-auto" x-data="{ visible: false }" x-intersect="visible = true">
+                    <div class="my-auto pb-48 lg:pb-72 w-full" x-data="{ visible: false }" x-intersect="visible = true">
                         <div class="text-center lg:text-left flex flex-col gap-4 px-4 lg:px-0"
                             :class="visible ? 'animate-fadeInUp' : ''">
                             <h1 class="font-montserrat text-dh-head5 lg:text-dh-head4 text-greyscale-100">Solusi
@@ -90,7 +90,7 @@
                                 <span class="text-blue-400">Hemat</span> dan
                                 <span class="text-blue-400">Mudah</span>.
                             </h1>
-                            <p class="text-db-large lg:text-dh-head6 font-medium w-full lg:w-3/4">
+                            <p class="text-db-large lg:text-dh-head6 font-medium w-full">
                                 Membantu pengadaan barang para pelaku usaha di bidang kesehatan dan
                                 kecantikan.<br /><br />
                                 Dapatkan pengalaman belanja terbaik untuk kebutuhan usaha Anda bersama
@@ -107,8 +107,8 @@
                         </div>
                     </div>
 
-                    <div class="hidden lg:block" x-data="{ visible: false }" x-intersect="visible = true">
-                        <div :class="visible ? 'animate-scale' : ''">
+                    <div class="hidden lg:block col-span-2 relative" x-data="{ visible: false }" x-intersect="visible = true">
+                        <div class="absolute 2xl:relative bottom-0" :class="visible ? 'animate-scale' : ''">
                             <img src="images/hero-homepage-desk-illustration.png" class="w-full" />
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                         </p>
                     </div>
                 </div>
-                <img src="images/about-habaku-illustration.png" class="w-200 h-120 md:w-fit md:h-fit m-auto" />
+                <img src="images/about-habaku-illustration.png" class="w-fit h-fit m-auto" />
             </div>
         </div>
     </section>
@@ -374,7 +374,7 @@
     <section class="bg-green-200">
         <div class="2xl:container mx-auto grid grid-cols-2" x-data="{ visible: false }" x-intersect="visible = true">
             <div class="my-auto" :class="visible ? 'animate-scale' : ''">
-                <div class="flex flex-col gap-y-2 text-left pl-4 py-4 lg:pl-200 lg:py-40 my-auto">
+                <div class="flex flex-col gap-y-2 text-left pl-4 py-4 lg:pl-72 2xl:pl-200 lg:py-40 my-auto">
                     <h1 class="text-mb-small lg:text-dh-head5 font-bold">Download Aplikasi Habaku Sekarang!
                     </h1>
                     <p class="text-mc-large lg:text-db-small">Dapatkan voucher spesial untuk pengguna pertama, dan promo
@@ -398,7 +398,7 @@
         <div class="2xl:container mx-auto">
             <div class="py-8 px-8 lg:px-72 lg:py-40">
                 <img src="images/habaku-logo.png" class="w-85 h-52" />
-                <div class="flex flex-col lg:flex-row gap-6 lg:gap-74 2xl:gap-160 pt-6 text-greyscale-100">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-14 2xl:gap-160 pt-6 text-greyscale-100">
                     <div>
                         <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
                             Perusahaan
@@ -426,7 +426,7 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-74 2xl:gap-180 text-greyscale-100">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 2xl:gap-180 text-greyscale-100">
                         <div class="text-left w-full">
                             <h1 class="font-bold pb-1 lg:pb-2 text-mh-head6 lg:text-dh-head6">
                                 Temukan Habaku di:
