@@ -1318,6 +1318,11 @@ video {
   line-height: 24px;
 }
 
+.text-mh-head2{
+  font-size: 26px;
+  line-height: 30px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1673,8 +1678,8 @@ header.scroll {
     width: 75%;
   }
 
-  .lg\:w-3\/5{
-    width: 60%;
+  .lg\:w-4\/5{
+    width: 80%;
   }
 
   .lg\:w-416{
@@ -1900,6 +1905,11 @@ header.scroll {
   .lg\:text-dc-large{
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .lg\:text-dh-head3{
+    font-size: 34px;
+    line-height: 44px;
   }
 
   .lg\:text-dh-head4{
