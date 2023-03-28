@@ -7,6 +7,10 @@
 @tailwind utilities;
 
 @layer utilities {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
     .line-clamp {
         display: -webkit-box;
         -webkit-box-orient: vertical;

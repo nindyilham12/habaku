@@ -37,6 +37,7 @@ module.exports = {
           'dropBlue': '0px 0px 16px #9BB0DA',
           'dropBlueButton': '0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)',
           'dropOutlineBlue': '0px 0px 11px #1D4AA7',
+          'dropMenuDropdown': '0px 4px 16px rgba(0, 0, 0, 0.2)',
         },
 
         colors: {
@@ -183,6 +184,7 @@ module.exports = {
           '95': '95px',
           '100': '100px',
           '105': '105px',
+          '112': '112px',
           '140': '140px',
           '160': '160px',
           '180': '180px',
