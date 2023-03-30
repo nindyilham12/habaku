@@ -9,6 +9,7 @@
 @layer utilities {
     ul, ol {
         list-style: revert;
+        padding-left: 16px;
     }
 
     .dropdown:hover .dropdown-menu {
