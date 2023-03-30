@@ -7,6 +7,10 @@
 @tailwind utilities;
 
 @layer utilities {
+    ul, ol {
+        list-style: revert;
+    }
+
     .dropdown:hover .dropdown-menu {
         display: block;
     }
