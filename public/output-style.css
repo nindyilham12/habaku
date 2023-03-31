@@ -1435,6 +1435,10 @@ ul, ol {
   padding-left: 16px;
 }
 
+.list-pl {
+  padding-left: 0px !important;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
